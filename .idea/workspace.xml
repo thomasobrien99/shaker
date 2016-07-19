@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeca51a2-351c-41cd-a378-dc3028981bba" name="Default" comment="" />
+    <list default="true" id="aeca51a2-351c-41cd-a378-dc3028981bba" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/appcompat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/android/support/v7/recyclerview/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/drawee/backends/pipeline/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/facebook/react/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/oblador/vectoricons/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/MainApplication$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/MainApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$mipmap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R$xml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakerG22/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/org/webkit/android_jsc/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainApplication.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" />
+    </list>
     <ignored path="shaker.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,34 +112,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shakerG22/MainApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#577#578#0" expanded="false" />
-                <element signature="e#615#616#0" expanded="false" />
-                <element signature="e#835#836#0" expanded="false" />
-                <element signature="e#870#871#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainApplication.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainApplication.java">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shakerG22/MainApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -128,6 +183,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -318,44 +376,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shakerG22" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shaker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shaker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shaker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,7 +670,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="42" width="1395" height="785" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,13 +764,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#615#616#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#870#871#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -766,22 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/shaker/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

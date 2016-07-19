@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/shakerG22/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c6bb704b5f0a8acf8992ca94a165968caea70ed3">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-3ae3ce0212b0f0b4b9db552627d1591ce358a4c4.jar" />
+    </item>
+
+</items>

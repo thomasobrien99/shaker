@@ -12,6 +12,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
+import BackButton from '../components/BackButton'
 import colors from '../styles/colors'
 
 class MixCocktailsScreen extends Component {
@@ -20,7 +21,8 @@ class MixCocktailsScreen extends Component {
     ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 != r2})
     this.state = {
       myCocktailsDataSource : ds.cloneWithRows({}),
-      refreshing: false
+      refreshing: false,
+      barFull: false
     }
   }
   componentDidMount(){
@@ -32,7 +34,8 @@ class MixCocktailsScreen extends Component {
       })
       .then(function(data){
         this.setState({
-          myCocktailsDataSource : ds.cloneWithRows(data)
+          myCocktailsDataSource : ds.cloneWithRows(data),
+          barFull: !!data.length
         })
       }.bind(this))
       .catch((err)=>{
@@ -48,6 +51,7 @@ class MixCocktailsScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
+      <BackButton nav={this.props.navigator}/>
       <View style={appStyles.viewCenter}>
         <Text style={appStyles.header}>My Cocktails:</Text>
       </View>
@@ -60,6 +64,16 @@ class MixCocktailsScreen extends Component {
           <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Add Cocktails</Text>
         </View>
       </TouchableOpacity>
+      {this.state.barFull ?
+        <TouchableOpacity 
+        onPress={()=>{
+          this._emptyBarCocktails()
+          this.props.navigator.pop()
+        }}>
+        <View style={[appStyles.wideRow, {backgroundColor: 'white'}]}>
+          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Cocktails From Bar</Text>
+        </View>
+      </TouchableOpacity>:<Text/>}
       <ListView
         refreshControl={
           <RefreshControl
@@ -73,11 +87,18 @@ class MixCocktailsScreen extends Component {
     </ViewContainer>
     )
   }
+  _emptyBarCocktails(){
+    AsyncStorage.setItem('userCocktails', JSON.stringify([])).then(()=>{
+      console.log('success!')
+    }).catch((err)=>{
+      console.log(err)
+    })
+  }
   _onRefresh(){
     this.setState({refreshing:true})
     AsyncStorage.getItem('userCocktails').then((userCocktails)=>{
       var queryString = JSON.parse(userCocktails).join('^')
-      fetch(`http://localhost:3000/api/cocktails/?filter=ids&type=ids&params=${queryString}`)
+      fetch(`https://cocktailapi.herokuapp.com/api/cocktails/?filter=ids&type=ids&params=${queryString}`)
       .then((res)=>{
         return res.json()
       })

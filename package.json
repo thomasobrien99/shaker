@@ -6,10 +6,13 @@
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
   "dependencies": {
+    "@remobile/react-native-splashscreen": "^1.0.3",
     "react": "15.2.1",
     "react-native": "0.29.2",
+    "react-native-loading-spinner-overlay": "^0.2.3",
     "react-native-scrollable-tab-view": "^0.5.3",
     "react-native-tab-navigator": "^0.3.2",
-    "react-native-vector-icons": "^2.0.3"
+    "react-native-vector-icons": "^2.0.3",
+    "rn-splash-screen": "^1.2.1"
   }
 }

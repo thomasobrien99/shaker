@@ -19,15 +19,15 @@ class MixIndexPage extends Component {
     <ViewContainer>
       <StatusBarBackground/>
         <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyMixPage()}>
-          <Image source={require('../styles/img/shaker.png')}/>
+          <Image source={require('../styles/img/shaker.png')} style={appStyles.midImage}/>
           <Text style={appStyles.header}>What Can I Make?</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyIngredientsPage()}>
-          <Image source={require('../styles/img/ingredients.png')}/>
+          <Image source={require('../styles/img/ingredients.png')} style={appStyles.midImage}/>
           <Text style={appStyles.header}>My Ingredients</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyCocktailsPage()}>
-          <Image source={require('../styles/img/mycocktails.png')}/>
+          <Image source={require('../styles/img/mycocktails.png')} style={appStyles.midImage}/>
           <Text style={appStyles.header}>My Cocktails</Text>
         </TouchableOpacity>
     </ViewContainer>

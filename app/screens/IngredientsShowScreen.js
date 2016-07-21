@@ -4,12 +4,14 @@ import {
   Text,
   View,
   TouchableOpacity,
-  ListView
+  ListView,
+  RefreshControl
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import StatusBarBackground from '../components/StatusBarBackground'
 import ViewContainer from '../components/ViewContainer'
 import CocktailRow from '../components/CocktailRow'
+import BackButton from '../components/BackButton'
 import toTitleCase from '../services/helpers'
 import appStyles from '../styles/styles'
 import colors from '../styles/colors'
@@ -20,7 +22,8 @@ class IngredientsShowScreen extends Component {
     ds = new ListView.DataSource({rowHasChanged:(r1,r2)=>r1!=r2})
     this.state = {
       ingredient : {},
-      cocktailDataSource: ds.cloneWithRows({})
+      cocktailDataSource: ds.cloneWithRows({}),
+      refreshing: true
     }
   }
   componentDidMount(){
@@ -29,7 +32,8 @@ class IngredientsShowScreen extends Component {
     }).then(function(data){
       this.setState({
         ingredient : data,
-        cocktailDataSource : ds.cloneWithRows(data.cocktails) 
+        cocktailDataSource : ds.cloneWithRows(data.cocktails),
+        refreshing: false
       })   
     }.bind(this))
     .catch(function(err){
@@ -40,9 +44,9 @@ class IngredientsShowScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
+        <BackButton nav={this.props.navigator}/>
         <TouchableOpacity style={styles.spaceBetween}>
           <Text style={[appStyles.header]}>{toTitleCase(this.state.ingredient.name)}</Text>
-          <Icon name = "plus-circle" />
         </TouchableOpacity>
       <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
         <Text style={appStyles.header}>Make These Drinks:</Text>
@@ -50,7 +54,12 @@ class IngredientsShowScreen extends Component {
       <ListView
         dataSource = {this.state.cocktailDataSource}
         renderRow = {(cocktail)=>{return this._renderCocktailRow(cocktail)}}
-        enableEmptySections={true} />
+        enableEmptySections={true} 
+        refreshControl = {
+          <RefreshControl
+            refreshing = {this.state.refreshing}
+          />}
+          />
     </ViewContainer>
     )
   }
@@ -67,7 +76,7 @@ class IngredientsShowScreen extends Component {
 
 const styles = StyleSheet.create({
   spaceBetween:{
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   }
 });
 

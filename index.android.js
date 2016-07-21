@@ -4,7 +4,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  AsyncStorage
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator'
 import ScrollableTabView from 'react-native-scrollable-tab-view'
@@ -22,6 +23,19 @@ class shaker extends Component {
       newRoute: {tab: 'mixTab', route:'index'},
       selectedTab : 'mixTab'
     }
+  }
+  componentDidMount(){
+    AsyncStorage.getItem('userIngredients').then((data)=>{
+      let userIngredients = JSON.parse(data) || []
+      userIngredients.push(31)//ADD ICE TO USER INGREDIENTS ON START
+      userIngredients.push(129)//ADD WATER TO USER INGREDIENTS ON START
+      userIngredients = Array.from(new Set(userIngredients))
+      AsyncStorage.setItem('userIngredients', JSON.stringify(userIngredients)).then(()=>{
+        console.log('Success!')
+      }).catch((err)=>{console.log(err)
+      })
+    }).catch((err)=>{console.log(err)
+    })
   }
   render(){
     return (

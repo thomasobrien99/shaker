@@ -5,11 +5,13 @@ import {
   AsyncStorage,
   ListView,
   ScrollView,
-  StyleSheet
+  StyleSheet,
+  RefreshControl
 } from 'react-native';
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
+import BackButton from '../components/BackButton'
 import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 
@@ -19,7 +21,8 @@ class MixIndexPage extends Component {
     ds = new ListView.DataSource({rowHasChanged: (r1, r2)=>r1!=r2})
     this.state = {
       possibleCocktailsDataSource : ds.cloneWithRows({}),
-      possibleCocktails : []
+      refreshing: true,
+      visible: true
     }
   }
   componentDidMount() {
@@ -29,7 +32,16 @@ class MixIndexPage extends Component {
       fetch(`https://cocktailapi.herokuapp.com/api/cocktails/?filter=ingredients&type=ids&params=${queryString}`).then((res)=>{
         return res.json()
       }).then((possibleCocktails)=>{
-        this.setState({possibleCocktails})
+        this.setState({
+          possibleCocktailsDataSource: ds.cloneWithRows(possibleCocktails),
+          refreshing: false
+        })
+        if(!possibleCocktails.length)
+        {
+          this.setState({
+            noResultsMessage: "Looks like you need to add some ingredients!"
+          })
+        }
       }).catch((err)=>{
         console.log(err)
       })
@@ -41,34 +53,52 @@ class MixIndexPage extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
+      <BackButton nav={this.props.navigator}/>
       <View style={appStyles.viewCenter}>
         <Text style={appStyles.header}>What I Can Make</Text>
       </View>
-      <ScrollView>
-      {this._renderPossibleCocktails()}
-      </ScrollView>
+      <Text style={appStyles.header}>{this.state.noResultsMessage}</Text>
+      <ListView
+        refreshControl={
+          <RefreshControl
+            refreshing={this.state.refreshing}
+            onRefresh={this._onRefresh.bind(this)}
+            />
+        }
+        dataSource = {this.state.possibleCocktailsDataSource}
+        renderRow = {(cocktail)=>{return this._renderCocktailRow(cocktail)}}
+        enableEmptySections = {true} />
     </ViewContainer>
     )
   }
-  _renderPossibleCocktails(){
-    if (!this.state.possibleCocktails.length){
-      return (
-        <View style={[appStyles.viewCenter, appStyles.wideRow]}>
-          <Text style={styles.addIngredientsText}>Add Some Ingredients To See Possible Cocktails!</Text>
-        </View>
-        )
-      }
-    return this.state.possibleCocktails.map((cocktail, i)=>{
-        return <CocktailRow 
-          key = {i} 
-          cocktail = {cocktail}
-          onPress={()=>
-          { 
-            this.props.navigator.props.changeSelectedTab('cocktailsTab', {'ident':'show', cocktail})
-            this.props.navigator.pop()
-          }}
-          />
+  _renderCocktailRow(cocktail) {
+    return (
+      <CocktailRow 
+        onPress={()=>this._navigateToCocktailShow(cocktail)}
+        cocktail={cocktail}
+      />
+      )
+  }
+  _onRefresh(){
+    this.setState({refreshing:true})
+    AsyncStorage.getItem('userIngredients').then((userIngredients)=>{
+      var queryString = JSON.parse(userIngredients).join('^')
+      fetch(`https://cocktailapi.herokuapp.com/api/cocktails/?filter=ingredients&type=ids&params=${queryString}`).then((res)=>{
+        return res.json()
+      }).then((possibleCocktails)=>{
+        this.setState({
+          possibleCocktailsDataSource: ds.cloneWithRows(possibleCocktails),
+          refreshing: false
+        })
+      }).catch((err)=>{
+        console.log(err)
       })
+    }).catch((err)=>{
+      console.log(err)
+    })
+  }
+  _navigateToCocktailShow(cocktail){
+    this.props.navigator.props.changeSelectedTab('cocktailsTab', {'ident':'show', cocktail})
   }
 }
 

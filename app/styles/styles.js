@@ -50,7 +50,6 @@ appStyles = StyleSheet.create({
   textInput:{
     fontSize: Size.FONT_SIZE,
     height: Size.UNIT*2.5,
-    borderColor: 'blue',
     borderWidth: Size.UNIT*.1,
     margin: Size.UNIT*.1,
     borderRadius: Size.UNIT*.5,
@@ -72,6 +71,17 @@ appStyles = StyleSheet.create({
   },
   glassBox:{
     padding: Size.UNIT * .2,
+  },
+  midImage:{
+    height: Size.UNIT * 7,
+    width: Size.UNIT * 7
+  },
+  largeImage:{
+    height: Size.UNIT * 13,
+    width: Size.UNIT * 13
+  },
+  backButton:{
+    fontSize: Size.UNIT
   }
 })
 

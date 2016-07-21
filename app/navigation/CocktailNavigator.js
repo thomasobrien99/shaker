@@ -6,6 +6,11 @@ import {
 
 import CocktailsIndexScreen from '../screens/CocktailsIndexScreen'
 import CocktailsShowScreen from '../screens/CocktailsShowScreen'
+import CocktailsByNameScreen from '../screens/CocktailsByNameScreen'
+import CocktailsByIngredientScreen from '../screens/CocktailsByIngredientScreen'
+import CocktailsByCategoryScreen from '../screens/CocktailsByCategoryScreen'
+import CocktailCategoryShowScreen from '../screens/CocktailCategoryShowScreen'
+
 
 class CocktailNavigator extends Component {
   componentWillReceiveProps(props){
@@ -22,7 +27,11 @@ class CocktailNavigator extends Component {
     var globalNavigatorProps = {navigator}
     switch(route.ident){
       case "index": return <CocktailsIndexScreen {...globalNavigatorProps}/>
+      case "cocktailsByName": return <CocktailsByNameScreen {...globalNavigatorProps}/>
+      case "cocktailsByCategory": return <CocktailsByCategoryScreen {...globalNavigatorProps}/>
+      case "cocktailsByIngredient": return <CocktailsByIngredientScreen {...globalNavigatorProps}/>
       case "show" : return <CocktailsShowScreen {...globalNavigatorProps} cocktail = {route.cocktail}/>
+      case "showCategory" : return <CocktailCategoryShowScreen {...globalNavigatorProps} categoryName = {route.categoryName}/>
       default: return <CocktailsIndexScreen {...globalNavigatorProps}/>
     }
   }
@@ -31,15 +40,10 @@ class CocktailNavigator extends Component {
       <Navigator
       initialRoute={{ident: "index"}}
       ref="cocktailNavigator"
-      style={styles.navigatorStyles}
       renderScene={this._renderScene}
       changeSelectedTab={this.props.changeSelectedTab} />
       )
   }
 }
-
-const styles = StyleSheet.create({
-  
-});
 
 module.exports = CocktailNavigator;

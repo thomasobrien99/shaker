@@ -4,12 +4,14 @@ import {
   Text,
   View,
   ListView,
-  TextInput
+  TextInput,
+  RefreshControl
 } from 'react-native';
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import IngredientRow from '../components/IngredientRow'
 import appStyles from '../styles/styles'
+import colors from '../styles/colors'
 
 class IngredientsIndexScreen extends Component {
   constructor(props) {
@@ -18,7 +20,8 @@ class IngredientsIndexScreen extends Component {
     this.state = { 
       ingredientDataSource : ds.cloneWithRows({}),
       ingredientData : [],
-      searchText : "Search Ingredients"
+      searchText : "Search Ingredients",
+      refreshing: true
     }
   }
   componentDidMount() {
@@ -27,8 +30,9 @@ class IngredientsIndexScreen extends Component {
     }).then(function(data){
       this.setState({
         ingredientDataSource : ds.cloneWithRows(data),
-        ingredientData : data
-      })   
+        ingredientData : data,
+        refreshing: false
+      })
     }.bind(this))
     .catch(function(err){
       console.log(err)
@@ -44,13 +48,19 @@ class IngredientsIndexScreen extends Component {
       <TextInput 
         onFocus={()=>this.setState({searchText:''})} 
         onChangeText={(text)=>this._updateSearchText(text)}
-        style={appStyles.textInput}
+        style={[appStyles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
         value={this.state.searchText}
         />
       <ListView
         dataSource = {this.state.ingredientDataSource}
         renderRow = {(ingredient)=> { return this._renderIngredientRow(ingredient)}}
-        enableEmptySections={true} />
+        enableEmptySections={true}
+        automaticallyAdjustContentInsets={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={this.state.refreshing}
+            />
+        } />
     </ViewContainer>
     )
   }

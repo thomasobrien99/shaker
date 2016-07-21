@@ -2,7 +2,7 @@
 manifest
 ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:1:1-31:12
 	package
-		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:2:5-28
+		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:2:5-24
 		INJECTED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -27,7 +27,7 @@ MERGED from [com.facebook.react:react-native:0.29.2] /Users/thomasobrien/Desktop
 		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:7:22-75
 uses-sdk
 ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:9:5-11:41
-MERGED from [shakerG22:react-native-vector-icons:unspecified] /Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/shakerG22/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [shakr:react-native-vector-icons:unspecified] /Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/shakr/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.29.2] /Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.29.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:0.11.0] /Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:fbcore:0.11.0] /Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/AndroidManifest.xml:5:5-7:41
@@ -120,7 +120,7 @@ MERGED from [com.android.support:support-v4:23.2.1] /Users/thomasobrien/Desktop/
 		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:18:7-38
 	android:name
 		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:14:7-38
-activity#com.shakerG22.MainActivity
+activity#com.shakr.MainActivity
 ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:19:7-27:18
 	android:label
 		ADDED from /Users/thomasobrien/Desktop/capstone/shaker/android/app/src/main/AndroidManifest.xml:21:9-41

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.shakerG22"
-    android:versionCode="3"
+    package="com.shakr"
+    android:versionCode="111"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -16,13 +16,13 @@
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name="com.shakerG22.MainApplication"
+        android:name="com.shakr.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.shakerG22.MainActivity"
+            android:name="com.shakr.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>

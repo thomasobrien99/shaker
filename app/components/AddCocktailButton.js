@@ -22,7 +22,7 @@ class AddCocktailButton extends Component {
 	render(){
 		return (
 			<TouchableHighlight onPress={()=>this.toggleCocktail(this.props.cocktailId)}>
-				<Icon style={{fontSize: 30, color:'white'}} name = {this.state.owned ? 'minus-square': 'plus-square'} />
+				<Icon style={{fontSize: 30, color:'white'}} name = {this.state.owned ? 'heart': 'plus-square'} />
 			</TouchableHighlight>
 			)
 		}

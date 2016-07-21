@@ -11,6 +11,7 @@ import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import IngredientRow from '../components/IngredientRow'
+import BackButton from '../components/BackButton'
 import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 
@@ -18,7 +19,11 @@ class MixIngredientsPage extends Component {
   constructor(props) {
     super(props)
     ds = new ListView.DataSource({rowHasChanged:(r1, r2) => r1 != r2})
-    this.state =  { myIngredientsDatasource : ds.cloneWithRows({}), refreshing: false}
+    this.state =  { 
+      myIngredientsDatasource : ds.cloneWithRows({}), 
+      refreshing: false,
+      barEmpty: false
+    }
   }
   componentDidMount(){
     AsyncStorage.getItem('userIngredients').then((userIngredients)=>{
@@ -30,7 +35,8 @@ class MixIngredientsPage extends Component {
       .then(function(data){
         console.log(data)
         this.setState({
-          myIngredientsDatasource : ds.cloneWithRows(data)
+          myIngredientsDatasource : ds.cloneWithRows(data),
+          barEmpty : !!data.length
         })
       }.bind(this))
       .catch((err)=>{
@@ -45,6 +51,7 @@ class MixIngredientsPage extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
+      <BackButton nav={this.props.navigator}/>
       <View style={appStyles.viewCenter}>
       <Text style={appStyles.header}>My Ingredients:</Text>
       </View>
@@ -53,6 +60,16 @@ class MixIngredientsPage extends Component {
           <Text style={[appStyles.wideRowText, {color: 'white'}]}>Add Ingredients</Text>
         </View>
       </TouchableOpacity>
+      {this.state.barEmpty ?
+        <TouchableOpacity 
+        onPress={()=>{
+          this._emptyBarIngredients()
+          this.props.navigator.pop()
+        }}>
+        <View style={[appStyles.wideRow, {backgroundColor: 'white'}]}>
+          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Ingredients From Bar</Text>
+        </View>
+      </TouchableOpacity>:<Text/>}
       <ListView
         refreshControl={
           <RefreshControl
@@ -76,11 +93,18 @@ class MixIngredientsPage extends Component {
           ingredient = {ingredient} />
     )
   }
+   _emptyBarIngredients(){
+    AsyncStorage.setItem('userIngredients', JSON.stringify([])).then(()=>{
+      console.log('success!')
+    }).catch((err)=>{
+      console.log(err)
+    })
+  }
   _onRefresh(){
     this.setState({refreshing:true})
     AsyncStorage.getItem('userIngredients').then((userIngredients)=>{
       var queryString = JSON.parse(userIngredients).join('^')
-      fetch(`http://localhost:3000/api/ingredients/?filter=ids&type=ids&params=${queryString}`)
+      fetch(`https://cocktailapi.herokuapp.com/api/ingredients/?filter=ids&type=ids&params=${queryString}`)
       .then((res)=>{
         return res.json()
       })

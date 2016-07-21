@@ -1,4 +1,4 @@
-package com.shakerG22;
+package com.shakr;
 
 import com.facebook.react.ReactActivity;
 

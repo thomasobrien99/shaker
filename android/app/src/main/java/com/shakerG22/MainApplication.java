@@ -1,4 +1,4 @@
-package com.shakerG22;
+package com.shakr;
 
 import android.app.Application;
 import android.util.Log;

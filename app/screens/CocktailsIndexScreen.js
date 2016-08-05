@@ -130,14 +130,34 @@ class CocktailsIndexScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-        <TouchableOpacity style={styles.mainSections} onPress={()=>this.props.navigator.push({ident: 'cocktailsByName'})}>
-          <Image source={require('../styles/img/abc.png')} style={appStyles.midImage}/>
-          <Text style={appStyles.header}>Find Cocktails By Name</Text>
+
+      <View style={styles.mainSections}>
+        
+        <TouchableOpacity 
+          onPress={()=>this.props.navigator.push({ident: 'cocktailsByName'})}>
+          <Image 
+            source={require('../styles/img/abc.png')} 
+            style={appStyles.midImage}
+            resizeMode={"contain"}/>
+          <Text 
+            style={appStyles.header}>
+            Find Cocktails By Name
+          </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.mainSections} onPress={()=>this.props.navigator.push({ident: 'cocktailsByCategory'})}>
-          <Image source={require('../styles/img/categories.png')} style={appStyles.midImage}/>
-          <Text style={appStyles.header}>Find Cocktails By Category</Text>
+        
+        <TouchableOpacity 
+          onPress={()=>this.props.navigator.push({ident: 'cocktailsByCategory'})}>
+          <Image 
+            source={require('../styles/img/categories.png')}
+            style={appStyles.midImage}/>
+          <Text 
+            style={appStyles.header}>
+            Find Cocktails By Category
+          </Text>
         </TouchableOpacity>
+      
+      </View>
+    
     </ViewContainer>
     )
   }
@@ -145,8 +165,10 @@ class CocktailsIndexScreen extends Component {
 
 const styles = StyleSheet.create({
   mainSections: {
+    flex: 1,
+    justifyContent:'space-between',
     alignItems: 'center',
-    margin: 15
+    marginVertical: 120
   }
 })
 

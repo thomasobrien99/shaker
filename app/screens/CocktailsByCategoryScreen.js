@@ -40,10 +40,13 @@ class CocktailsByCategoryScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
+      
       <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
         <Text style={appStyles.header}>COCKTAIL CATEGORIES</Text>
+        <View/>
       </View>
+      
       <ListView
         dataSource = {this.state.cocktailDataSource}
         renderRow = {(category)=> { return this._renderCategoryRow(category)}}

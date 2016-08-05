@@ -41,7 +41,6 @@ class CocktailsByNameScreen extends Component {
         cocktailDataSource : ds.cloneWithRows(data),
         cocktailData: data,
         refreshing: false
-
       })
     }.bind(this))
     .catch(function(err){
@@ -52,10 +51,13 @@ class CocktailsByNameScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
-      <View style={appStyles.viewCenter}>
+
+      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
         <Text style={appStyles.header}>COCKTAILS</Text>
+        <View/>
       </View>
+      
       <TextInput 
         style={[appStyles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
         onChangeText={(text)=>this._updateSearch(text)} 

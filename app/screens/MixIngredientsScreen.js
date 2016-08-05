@@ -4,8 +4,10 @@ import {
   View,
   TouchableOpacity,
   ListView,
+  ScrollView,
   AsyncStorage,
-  RefreshControl
+  RefreshControl,
+  StyleSheet
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
@@ -21,6 +23,7 @@ class MixIngredientsPage extends Component {
     ds = new ListView.DataSource({rowHasChanged:(r1, r2) => r1 != r2})
     this.state =  { 
       myIngredientsDatasource : ds.cloneWithRows({}), 
+      ingredientData:[],
       refreshing: false,
       barEmpty: false
     }
@@ -36,6 +39,7 @@ class MixIngredientsPage extends Component {
         console.log(data)
         this.setState({
           myIngredientsDatasource : ds.cloneWithRows(data),
+          ingredientData: data,
           barEmpty : !!data.length
         })
       }.bind(this))
@@ -50,47 +54,66 @@ class MixIngredientsPage extends Component {
   render() {
     return (
     <ViewContainer>
+
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
-      <View style={appStyles.viewCenter}>
-      <Text style={appStyles.header}>My Ingredients:</Text>
+      
+      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
+        <Text style={appStyles.header}>My Ingredients:</Text>
+        <View/>
       </View>
-      <TouchableOpacity onPress={()=>this.props.navigator.props.changeSelectedTab('ingredientsTab', {ident:'index'})}>
-        <View style={[appStyles.wideRow, {backgroundColor: colors.darkBlue}]}>
-          <Text style={[appStyles.wideRowText, {color: 'white'}]}>Add Ingredients</Text>
+
+      <TouchableOpacity 
+        onPress={()=>{
+          this.props.navigator.props.changeSelectedTab('ingredientsTab', {ident:'index'})
+        }}>
+        <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
+          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>
+            Add Ingredients
+          </Text>
         </View>
       </TouchableOpacity>
-      {this.state.barEmpty ?
-        <TouchableOpacity 
-        onPress={()=>{
-          this._emptyBarIngredients()
-          this.props.navigator.pop()
-        }}>
-        <View style={[appStyles.wideRow, {backgroundColor: 'white'}]}>
-          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Ingredients From Bar</Text>
+      
+      <View style={styles.spaceBetween}>
+        
+        <View style={[appStyles.mixScrollBox]}>
+          <ScrollView
+            refreshControl={
+              <RefreshControl
+                refreshing={this.state.refreshing}
+                onRefresh={this._onRefresh.bind(this)}
+                />
+            }>
+            {this.state.ingredientData.map((ingredient, i)=>this._renderIngredientRow(ingredient, i))}
+          </ScrollView>
         </View>
-      </TouchableOpacity>:<Text/>}
-      <ListView
-        refreshControl={
-          <RefreshControl
-            refreshing={this.state.refreshing}
-            onRefresh={this._onRefresh.bind(this)}
-            />
-        }
-        dataSource = {this.state.myIngredientsDatasource}
-        renderRow = {(ingredient)=>{return this._renderIngredientRow(ingredient)}}
-        enableEmptySections = {true} />
+
+        {this.state.barEmpty ?
+        <TouchableOpacity 
+          onPress={()=>{
+            this._emptyBarIngredients()
+            this.props.navigator.pop()
+          }}>
+          <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
+            <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Ingredients From Bar</Text>
+          </View>
+        </TouchableOpacity>:<Text/>}
+      
+      </View>
+    
     </ViewContainer>
     )
   }
-  _renderIngredientRow(ingredient){
+  _renderIngredientRow(ingredient, i){
     return (
-      <IngredientRow onPress={()=>
-          { 
-            this.props.navigator.props.changeSelectedTab('ingredientsTab', {'ident':'show', ingredient})
-            this.props.navigator.pop()
-          }} 
-          ingredient = {ingredient} />
+      <IngredientRow 
+        onPress={()=>{ 
+          this.props.navigator.props.changeSelectedTab('ingredientsTab', {'ident':'show', ingredient})
+          this.props.navigator.pop()
+        }} 
+        ingredient = {ingredient}
+        key={i}
+      />
     )
   }
    _emptyBarIngredients(){
@@ -123,5 +146,12 @@ class MixIngredientsPage extends Component {
     })
   }
 }
+
+const styles = StyleSheet.create({
+  spaceBetween:{
+    flex:1,
+    justifyContent: 'space-between'
+  }
+});
 
 module.exports = MixIngredientsPage;

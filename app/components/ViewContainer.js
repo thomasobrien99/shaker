@@ -1,7 +1,7 @@
 "use strict"
 
 import React, { Component} from "react"
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Platform } from "react-native";
 import NativeModules from 'react-native'
 
 class ViewContainer extends Component{
@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
 		flexDirection: "column",
 		justifyContent: "flex-start",
 		alignItems: "stretch",
-		backgroundColor: 'white'
+		backgroundColor: 'white',
+		marginBottom: Platform.OS === 'ios' ? 50 : 0
 	}
 });
 

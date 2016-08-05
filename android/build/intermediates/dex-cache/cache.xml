@@ -2,6 +2,34 @@
 <items version="2" >
 
     <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-da3f9b7f64a4771d8c4588886fdd042705ab7189.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-1103471c6a318c90fa705824fd7bc3d212e280d3.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-5c898656b51e00c7042ea990159036fe4c99eea0.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-63a19fb09a9981b181d6b5fa443370a24e71849f.jar" />
+    </item>
+    <item
         jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/shakr/react-native-vector-icons/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -9,18 +37,11 @@
         <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-3a47821f8a92c4936b42aa46108f89303922c668.jar" />
     </item>
     <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.29.2/jars/classes.jar"
+        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d42533f34d201acfb5c6931797f2bff7edd23be5">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-225edc83f43621e1e6a77673a0445276c6199891.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-150b2d8014bd57da607b769edbd105ea8b8ed2d9.jar" />
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okhttp-3.2.0-586964a55d8ccb7a213c10a3cf8370f364b815f8.jar" />
     </item>
     <item
         jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -37,27 +58,6 @@
         <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okhttp-ws-3.2.0-0bd5204e81ffcee18eb59bf9bd1af5be9848d44b.jar" />
     </item>
     <item
-        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/jackson-core-2.2.3-762c951d7d9f3f40275e2bbb9946742cb358c02f.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okhttp-3.2.0-586964a55d8ccb7a213c10a3cf8370f364b815f8.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-ad5dd9cca0e7e88e195c5886eed90940721e60a4.jar" />
-    </item>
-    <item
         jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.29.2/jars/libs/infer-annotations-1.5.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -65,11 +65,53 @@
         <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/infer-annotations-1.5-5a8e74703623efb7f0ee44c83fe5bc5256093fbc.jar" />
     </item>
     <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-11cc495a48c2eff8256082692a42b4faa5da09c1.jar" />
+        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-0cfd6304642c777e75d02bc74cb776b972eaedd9.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/jsr305-3.0.0-53a1d647a552b4195b3f63c08d1399ca07bc6035.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.29.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d42533f34d201acfb5c6931797f2bff7edd23be5">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-225edc83f43621e1e6a77673a0445276c6199891.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.2.0/6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c/okhttp-urlconnection-3.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okhttp-urlconnection-3.2.0-3052add33e9a9361bf911fd1a790dc6be401bd10.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/bolts-tasks-1.4.0-208c115e0f56b721b33ee7dafab7095a749b9e42.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/jackson-core-2.2.3-762c951d7d9f3f40275e2bbb9946742cb358c02f.jar" />
+    </item>
+    <item
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-ad5dd9cca0e7e88e195c5886eed90940721e60a4.jar" />
     </item>
     <item
         jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
@@ -86,53 +128,18 @@
         <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/internal_impl-23.2.1-4159cf05b7678f9fafb7cab293202bfdd702f1ee.jar" />
     </item>
     <item
-        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/bolts-tasks-1.4.0-208c115e0f56b721b33ee7dafab7095a749b9e42.jar" />
+        sha1="1137942adeb03984c1311b662363dd38fc238fd3">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-11cc495a48c2eff8256082692a42b4faa5da09c1.jar" />
     </item>
     <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.11.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-63a19fb09a9981b181d6b5fa443370a24e71849f.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d31aadf33187c37a7cd63dc1b769f8c6e33f78c3">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-1103471c6a318c90fa705824fd7bc3d212e280d3.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/jsr305-3.0.0-53a1d647a552b4195b3f63c08d1399ca07bc6035.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="98786c1770b531b9194fb6448b2a2692c64074b6">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-da3f9b7f64a4771d8c4588886fdd042705ab7189.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="ca63c521b5745ae9a09629d7ca67ff6bc2a967fe">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-5c898656b51e00c7042ea990159036fe4c99eea0.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.2.0/6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c/okhttp-urlconnection-3.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okhttp-urlconnection-3.2.0-3052add33e9a9361bf911fd1a790dc6be401bd10.jar" />
+        sha1="3341b66c54367e777a0647e2db96c045329bfeab">
+        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-150b2d8014bd57da607b769edbd105ea8b8ed2d9.jar" />
     </item>
     <item
         jar="/Users/thomasobrien/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
@@ -147,13 +154,6 @@
         revision="23.0.1"
         sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
         <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/okio-1.8.0-ff63a45dfd334ebd243acbbef97b7d830b5042c7.jar" />
-    </item>
-    <item
-        jar="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/0.11.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="2b8a01ad9da5d26d0067894c22e87597bca2c500">
-        <dex dex="/Users/thomasobrien/Desktop/capstone/shaker/android/app/build/intermediates/pre-dexed/release/classes-0cfd6304642c777e75d02bc74cb776b972eaedd9.jar" />
     </item>
 
 </items>

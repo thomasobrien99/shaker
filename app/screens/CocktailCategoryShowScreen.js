@@ -44,10 +44,21 @@ class CocktailCategoryShowScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
+     
       <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
-        <Text style={appStyles.header}>{`Category: ${toTitleCase(this.props.categoryName.replace(/[_]/g, ' ').replace(/[!]/g, '/'))}`}</Text>
+        <BackButton nav={this.props.navigator}/>
+        <Text style={appStyles.header}>
+          Category:
+        </Text>
+        <View/>
       </View>
+
+      <View style={{backgroundColor: colors.yellow}}>
+        <Text style={appStyles.header}>
+          {`${toTitleCase(this.props.categoryName.replace(/[_]/g, ' ').replace(/[!]/g, '/'))}`}
+        </Text>
+      </View>
+
       <ListView
         dataSource = {this.state.cocktailDataSource}
         renderRow = {(cocktail)=>{return this._renderCocktailRow(cocktail)}}

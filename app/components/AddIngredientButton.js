@@ -23,7 +23,7 @@ class AddIngredientButton extends Component {
 	render(){
 		return (
 			<TouchableOpacity onPress={()=>this._addIngredient(this.props.ingredientId)}>
-				<Icon style={{fontSize: 25, color:colors.darkBlue}}name = {this.state.owned ? 'minus-square':'plus-square'} />
+				<Icon style={{fontSize: 25, color:'white'}} name = {this.state.owned ? 'minus-square':'plus-square'} />
 			</TouchableOpacity>
 			)
 		}
@@ -46,13 +46,5 @@ class AddIngredientButton extends Component {
 	  ).catch((err)=>{console.log(err)}
 	)}
 }
-
-
-const styles = StyleSheet.create({
-	statusBarBackground: {
-		height: 20,
-		backgroundColor: "white"
-	}
-})
 
 module.exports = AddIngredientButton

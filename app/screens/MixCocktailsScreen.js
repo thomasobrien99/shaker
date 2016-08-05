@@ -6,7 +6,8 @@ import {
   ListView,
   AsyncStorage,
   StyleSheet,
-  RefreshControl
+  RefreshControl,
+  ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
@@ -22,6 +23,7 @@ class MixCocktailsScreen extends Component {
     this.state = {
       myCocktailsDataSource : ds.cloneWithRows({}),
       refreshing: false,
+      cocktailData:[],
       barFull: false
     }
   }
@@ -35,6 +37,7 @@ class MixCocktailsScreen extends Component {
       .then(function(data){
         this.setState({
           myCocktailsDataSource : ds.cloneWithRows(data),
+          cocktailData:data,
           barFull: !!data.length
         })
       }.bind(this))
@@ -45,45 +48,58 @@ class MixCocktailsScreen extends Component {
     .catch((err)=>{
       console.log(err)
     })
-    console.log(this.refs)
   }
   render() {
     return (
     <ViewContainer>
+      
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
-      <View style={appStyles.viewCenter}>
+
+      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
         <Text style={appStyles.header}>My Cocktails:</Text>
+        <View/>
       </View>
+
       <TouchableOpacity 
         onPress={()=>{
           this.props.navigator.props.changeSelectedTab('cocktailsTab', {ident: 'index'})
           this.props.navigator.pop()
         }}>
-        <View style={[appStyles.wideRow, {backgroundColor: colors.yellow}]}>
-          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Add Cocktails</Text>
+        <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
+          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>
+            Add Cocktails
+          </Text>
         </View>
       </TouchableOpacity>
-      {this.state.barFull ?
-        <TouchableOpacity 
-        onPress={()=>{
-          this._emptyBarCocktails()
-          this.props.navigator.pop()
-        }}>
-        <View style={[appStyles.wideRow, {backgroundColor: 'white'}]}>
-          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Cocktails From Bar</Text>
+      
+      <View style={styles.spaceBetween}>
+        
+        <View style={[appStyles.mixScrollBox]}>
+          <ScrollView
+            refreshControl={
+              <RefreshControl
+                refreshing={this.state.refreshing}
+                onRefresh={this._onRefresh.bind(this)}/>
+              }>
+            {this.state.cocktailData.map((cocktail, i)=>this._renderCocktailRow(cocktail, i))}
+          </ScrollView>
         </View>
-      </TouchableOpacity>:<Text/>}
-      <ListView
-        refreshControl={
-          <RefreshControl
-            refreshing={this.state.refreshing}
-            onRefresh={this._onRefresh.bind(this)}
-            />
-        }
-        dataSource = {this.state.myCocktailsDataSource}
-        renderRow = {(cocktail)=>{return this._renderCocktailRow(cocktail)}}
-        enableEmptySections = {true} />
+
+        {this.state.barFull ?
+          <TouchableOpacity 
+            style={styles.test}
+            onPress={()=>{
+              this._emptyBarCocktails()
+              this.props.navigator.pop()
+            }}>
+              <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
+                <Text style={[appStyles.wideRowText, {color: colors.darkBlue}, styles.textTest]}>Remove All Cocktails From Bar</Text>
+              </View>
+          </TouchableOpacity>:<Text/>}
+      
+      </View>
+    
     </ViewContainer>
     )
   }
@@ -117,10 +133,11 @@ class MixCocktailsScreen extends Component {
     })
     console.log(this.refs)
   }
-  _renderCocktailRow(cocktail){
+  _renderCocktailRow(cocktail,i){
     return (
       <CocktailRow 
-        cocktail = {cocktail} 
+        cocktail = {cocktail}
+        key={i} 
         onPress={()=>
           {
             this.props.navigator.props.changeSelectedTab('cocktailsTab', {'ident':'show', cocktail})
@@ -132,23 +149,9 @@ class MixCocktailsScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-  cocktailRow: {
-    flexDirection: 'row',
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-    paddingTop: 12,
-    paddingBottom: 12,
-    paddingLeft: 32,
-    paddingRight: 32,
-    borderColor: '#0099ff',
-    borderWidth: 2,
-    borderRadius: 10,
-    margin: 2,
-    backgroundColor: '#002699',
-  },
-  cocktailText:{
-    color: '#ffffff',
-    fontSize: 17
+  spaceBetween:{
+    flex:1,
+    justifyContent: 'space-between'
   }
 });
 

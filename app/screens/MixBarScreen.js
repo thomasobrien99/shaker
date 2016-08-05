@@ -53,10 +53,13 @@ class MixIndexPage extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
-      <View style={appStyles.viewCenter}>
+
+      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
         <Text style={appStyles.header}>What I Can Make</Text>
+        <View/>
       </View>
+      
       <Text style={appStyles.header}>{this.state.noResultsMessage}</Text>
       <ListView
         refreshControl={

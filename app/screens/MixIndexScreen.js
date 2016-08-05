@@ -18,18 +18,22 @@ class MixIndexPage extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-        <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyMixPage()}>
-          <Image source={require('../styles/img/shaker.png')} style={appStyles.midImage}/>
-          <Text style={appStyles.header}>What Can I Make?</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyIngredientsPage()}>
-          <Image source={require('../styles/img/ingredients.png')} style={appStyles.midImage}/>
-          <Text style={appStyles.header}>My Ingredients</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.mainSections} onPress={()=>this._navigateToMyCocktailsPage()}>
-          <Image source={require('../styles/img/mycocktails.png')} style={appStyles.midImage}/>
-          <Text style={appStyles.header}>My Cocktails</Text>
-        </TouchableOpacity>
+        <View style={styles.mainSections}>
+          <TouchableOpacity onPress={()=>this._navigateToMyMixPage()}>
+            <Image source={require('../styles/img/shaker.png')} style={appStyles.midImage}/>
+            <Text style={appStyles.header}>What Can I Make?</Text>
+          </TouchableOpacity>
+          
+          <TouchableOpacity onPress={()=>this._navigateToMyIngredientsPage()}>
+            <Image source={require('../styles/img/ingredients.png')} style={appStyles.midImage}/>
+            <Text style={appStyles.header}>My Ingredients</Text>
+          </TouchableOpacity>
+          
+          <TouchableOpacity onPress={()=>this._navigateToMyCocktailsPage()}>
+            <Image source={require('../styles/img/mycocktails.png')} style={appStyles.midImage}/>
+            <Text style={appStyles.header}>My Cocktails</Text>
+          </TouchableOpacity>
+        </View>
     </ViewContainer>
     )
   }
@@ -51,7 +55,9 @@ class MixIndexPage extends Component {
 }
 const styles = StyleSheet.create({
   mainSections: {
+    flex:1,
     alignItems: 'center',
+    justifyContent: 'space-around',
     margin: 15
   }
 })

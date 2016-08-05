@@ -76,36 +76,53 @@ class CocktailShowScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <BackButton nav={this.props.navigator}/>
-      <View style={[appStyles.viewCenter, styles.borderBottom]}>
-        <Image source={this.state.cocktailGlassImg} style = {appStyles.largeImage}/>
-        <Text style={appStyles.header}>{toTitleCase(this.state.cocktail.name)}</Text>
+
+      <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+        <BackButton nav={this.props.navigator}/>
+        <Text style={appStyles.header}>
+          {toTitleCase(this.state.cocktail.name)}
+        </Text>
+        <View/>
       </View>
+
+      <View style={[appStyles.viewCenter, {alignSelf:'center'}, styles.borderBottom]}>
+        <Image source={this.state.cocktailGlassImg} style = {appStyles.largeImage}/>
+      </View>
+
+      <View style={styles.cocktailBodyContainer}>
       <ScrollView 
-        style={styles.cocktailBody}
         refreshControl={
           <RefreshControl
             refreshing = {this.state.refreshing}
             />
           }>
-        <View style={[appStyles.glassBox, {backgroundColor:colors.beige}]}>
-          <Text style={[{color: colors.darkBlue}, appStyles.glassText]}>{toTitleCase(this.state.cocktail.glass)}</Text>
-        </View>
+        
+        <View style={styles.cocktailBody}>
+          <View style={[appStyles.glassBox, {backgroundColor:colors.yellow}]}>
+            <Text style={[{color: colors.darkBlue}, appStyles.glassText]}>{toTitleCase(this.state.cocktail.glass)}</Text>
+          </View>
+
           {this.state.cocktail.ingredients.map((ingredient, i)=>{
             if (ingredient.amount === '\n') ingredient.amount = ''
             return <IngredientRow 
                     ingredient={ingredient.ingredient} 
                     amount={ingredient.amount} 
-                    key={i} 
+                    key={i}
+                    style={{backgroundColor: colors.yellow, color: colors.darkBlue}}
                     onPress={()=>this.props.navigator.props.changeSelectedTab('ingredientsTab', {ident:'show', ingredient: ingredient.ingredient})}/>
           })}
+
           <View style={styles.recipeBox}>
             <Text style={appStyles.recipeText}>
               {this.state.cocktail.recipe}
             </Text>
           </View>
-        <View style={appStyles.tabBarSpacer}/>
+
+        </View>
       </ScrollView>
+      <View style={styles.spacer}/>
+    </View>
+
     </ViewContainer>
     )
   }
@@ -117,14 +134,23 @@ const styles = StyleSheet.create({
     borderBottomWidth: 10,
     borderBottomColor: colors.darkBlue
   },
+  cocktailBodyContainer:{
+    padding: 15,
+    alignItems: 'center'
+  },
   cocktailBody:{
-    padding: 20
+    alignSelf: 'center',
+    backgroundColor: colors.beige,
+    padding: 15
   },
   recipeBox:{
     borderWidth: 1,
     borderColor: colors.beige,
-    backgroundColor: colors.gray,
+    backgroundColor: colors.yellow,
     padding: 5
+  },
+  spacer:{
+    height:50
   }
 });
 

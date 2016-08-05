@@ -42,9 +42,11 @@ class IngredientsIndexScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <View style={appStyles.viewCenter}>
+
+      <View style={{backgroundColor:colors.yellow}}>
           <Text style={appStyles.header}>INGREDIENTS</Text>
       </View>
+
       <TextInput 
         onFocus={()=>this.setState({searchText:''})} 
         onChangeText={(text)=>this._updateSearchText(text)}

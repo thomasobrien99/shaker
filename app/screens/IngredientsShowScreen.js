@@ -43,14 +43,19 @@ class IngredientsShowScreen extends Component {
   render() {
     return (
     <ViewContainer>
+      
       <StatusBarBackground/>
+      
+      <View style={[appStyles.viewCenter,{backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <TouchableOpacity style={styles.spaceBetween}>
-          <Text style={[appStyles.header]}>{toTitleCase(this.state.ingredient.name)}</Text>
-        </TouchableOpacity>
-      <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+        <Text style={[appStyles.header]}>{toTitleCase(this.state.ingredient.name)}</Text>
+        <View/>
+      </View>
+
+      <View style={{backgroundColor: colors.yellow}}>
         <Text style={appStyles.header}>Make These Drinks:</Text>
       </View>
+      
       <ListView
         dataSource = {this.state.cocktailDataSource}
         renderRow = {(cocktail)=>{return this._renderCocktailRow(cocktail)}}
@@ -74,10 +79,5 @@ class IngredientsShowScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  spaceBetween:{
-    justifyContent: 'space-between'
-  }
-});
 
 module.exports = IngredientsShowScreen;

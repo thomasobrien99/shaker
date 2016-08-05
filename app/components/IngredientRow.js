@@ -15,22 +15,16 @@ class IngredientRow extends Component {
 			<TouchableOpacity 
         style={[
           appStyles.narrowRow, 
-          styles.ingredientRow
+          {backgroundColor: colors.darkBlue}
           ]} 
           onPress={this.props.onPress}>
-              <Text style={[appStyles.narrowRowText, {color:colors.darkBlue}]}>{toTitleCase(this.props.ingredient.name)}</Text>
-              <Text style={[appStyles.narrowRowText]}>{this.props.amount}</Text>
+              <Text style={[appStyles.narrowRowText, {color:"white"}]}>{toTitleCase(this.props.ingredient.name)}</Text>
+              <Text style={[appStyles.narrowRowText, {color:"white"}]}>{this.props.amount}</Text>
               <AddIngredientButton style={[appStyles.narrowRowText]} ingredientId = {this.props.ingredient.id}/>
             </TouchableOpacity>
 			)
 		}
 }
 
-const styles = StyleSheet.create({
-  ingredientRow:{
-    backgroundColor: colors.yellow, 
-    borderColor: colors.yellowBorder
-  }
-})
 module.exports = IngredientRow
   

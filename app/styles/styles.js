@@ -99,24 +99,23 @@ import {
 import Size from './dimensions'
 import colors from './colors'
 
-Size.UNIT = 1
 //Size.UNIT = PixelRatio.get()*.5
 
-var deviceHeight = Dimensions.get('window').height;
+var deviceWidth = Dimensions.get('window').width;
 
-var ratioY;
+var normalizer;
 //const ratioY = deviceHeight < 568 ? (deviceHeight < 480 ? 0.75 : 0.875) : 1 ;
-if (deviceHeight < 480){
-  ratioY = .75
+if (deviceWidth < 480){
+  normalizer = .75
 }
-else if (deviceHeight < 568){
-  ratioY = .875
+else if (deviceWidth < 568){
+  normalizer = .875
 }
-else if (deviceHeight > 650){
-  ratioY = 1.2
+else if (deviceWidth > 650){
+  normalizer = 1.2
 }
 // We're simulating EM by changing font size according to Ratio
-Size.UNIT = Size.UNIT * ratioY;
+Size.UNIT = normalizer;
 
 
 
@@ -141,7 +140,7 @@ appStyles = StyleSheet.create({
     paddingHorizontal: 24*Size.UNIT,
     borderWidth: 2*Size.UNIT,
     borderRadius: 8*Size.UNIT,
-    margin: 10*Size.UNIT,
+    margin: 1*Size.UNIT,
   },
   wideRowText:{
     fontSize: 18*Size.UNIT,
@@ -154,7 +153,7 @@ appStyles = StyleSheet.create({
     borderWidth: 1*Size.UNIT,
     borderRadius: 6*Size.UNIT,
     paddingVertical: 9*Size.UNIT,
-    margin: 10*Size.UNIT,
+    margin: 1*Size.UNIT,
     paddingHorizontal: 24*Size.UNIT
   },
   narrowRowText:{

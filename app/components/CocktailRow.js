@@ -13,7 +13,7 @@ class CocktailRow extends Component {
   render(){
 		return (
 			<TouchableOpacity style={[appStyles.wideRow, {backgroundColor:colors.darkBlue}]} onPress={this.props.onPress}>
-        <Text style={[appStyles.wideRowText, styles.cocktailText]}>W{toTitleCase(this.props.cocktail.name)}</Text>
+        <Text style={[appStyles.wideRowText, styles.cocktailText]}>{toTitleCase(this.props.cocktail.name)}</Text>
         <Text style={{flex:1}} />
         <AddCocktailButton toggleCocktail = {this.props.toggleCocktail} cocktailId={this.props.cocktail.id} owned={this.props.cocktail.owned}/>
       </TouchableOpacity>

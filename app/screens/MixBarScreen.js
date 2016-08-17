@@ -6,7 +6,8 @@ import {
   ListView,
   ScrollView,
   StyleSheet,
-  RefreshControl
+  RefreshControl,
+  Dimensions
 } from 'react-native';
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'

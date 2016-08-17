@@ -75,9 +75,9 @@ class MixIngredientsPage extends Component {
         </View>
       </TouchableOpacity>
       
-      <View style={styles.spaceBetween}>
+      
         
-        <View style={[appStyles.mixScrollBox]}>
+        <View style={styles.spaceBetween}>
           <ScrollView
             style={{padding: 5}}
             refreshControl={
@@ -101,7 +101,7 @@ class MixIngredientsPage extends Component {
           </View>
         </TouchableOpacity>:<Text/>}
       
-      </View>
+
     
     </ViewContainer>
     )
@@ -151,8 +151,7 @@ class MixIngredientsPage extends Component {
 
 const styles = StyleSheet.create({
   spaceBetween:{
-    flex:1,
-    justifyContent: 'space-between'
+    flex:1
   }
 });
 

@@ -22,7 +22,7 @@ class MixIndexPage extends Component {
         <View style={styles.mainSections}>
           <TouchableOpacity onPress={()=>this._navigateToMyMixPage()}>
             <Image source={require('../styles/img/shaker.png')} style={appStyles.midImage}/>
-            <Text style={appStyles.header}>{""+Dimensions.get('window').width}What Can I Make?</Text>
+            <Text style={appStyles.header}>What Can I Make?</Text>
           </TouchableOpacity>
           
           <TouchableOpacity onPress={()=>this._navigateToMyIngredientsPage()}>

@@ -6,12 +6,23 @@ import {
   View,
   Navigator,
   TabBarIOS,
+  Dimensions,
   AsyncStorage
 } from 'react-native';
 
 import CocktailNavigator from './app/navigation/CocktailNavigator'
 import IngredientNavigator from './app/navigation/IngredientNavigator'
 import MixNavigator from './app/navigation/MixNavigator'
+
+
+import EStylesheet from 'react-native-extended-stylesheet'
+
+let {height, width} = Dimensions.get('window');
+
+EStylesheet.build({
+  rem: (width < 480 ? .875 : (width < 568 ? 1 : (width < 1.125 ? 1 : 1.25)))
+});
+
 
 class shaker extends Component {
   constructor(props) {

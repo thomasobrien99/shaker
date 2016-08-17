@@ -1,6 +1,8 @@
 package com.shakr;
 
 import com.facebook.react.ReactActivity;
+import com.mehcode.reactnative.splashscreen.SplashScreenPackage;
+import com.remobile.splashscreen.RCTSplashScreenPackage;
 
 public class MainActivity extends ReactActivity {
 

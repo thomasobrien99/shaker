@@ -1,95 +1,3 @@
-// import {
-//   Platform,
-// 	StyleSheet
-// } from 'react-native'
-// import Size from './dimensions'
-
-// appStyles = StyleSheet.create({
-// 	header:{
-//     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
-//     fontSize: Size.FONT_SIZE_TITLE*1.3,
-//     color: '#00648c',
-//     textAlign: 'center'
-// 	},
-// 	viewCenter:{
-// 		alignItems: 'center'
-// 	},
-// 	wideRow: {
-//     flexDirection: 'row',
-//     justifyContent: 'flex-start',
-//     alignItems: 'center',
-//     paddingTop: Size.UNIT*.75,
-//     paddingBottom: Size.UNIT*.75,
-//     paddingLeft: Size.UNIT*1.5,
-//     paddingRight: Size.UNIT*1.5,
-//     borderWidth: Size.UNIT*.1,
-//     borderRadius: Size.UNIT*.5,
-//     margin: Size.UNIT*.1,
-//   },
-//   wideRowText:{
-//     fontSize: Size.FONT_SIZE,
-//     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
-//   },
-//   narrowRow:{
-//     flexDirection: 'row',
-//     justifyContent: 'space-between',
-//     alignItems: 'center',
-//     borderWidth: Size.UNIT*.1,
-//     borderRadius: Size.UNIT*.5,
-//     paddingTop: Size.UNIT*.4,
-//     paddingBottom: Size.UNIT*.4,
-//     margin: Size.UNIT*.1,
-//     paddingLeft: Size.UNIT*1.5,
-//     paddingRight: Size.UNIT*1.5
-//   },
-//   narrowRowText:{
-//     fontSize: Size.FONT_SIZE,
-//     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
-//     flex:1
-//   },
-//   textInput:{
-//     fontSize: Size.FONT_SIZE,
-//     height: Size.UNIT*2.5,
-//     borderWidth: Size.UNIT*.1,
-//     margin: Size.UNIT*.1,
-//     borderRadius: Size.UNIT*.5,
-//     paddingLeft: Size.UNIT*1.5,
-//     paddingRight: Size.UNIT*1.5,
-//     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
-//   },
-//   tabBarSpacer:{
-//     height: 60
-//   },
-//   recipeText:{
-//     fontSize: Size.FONT_SIZE,
-//     textAlign: 'center',
-//     fontFamily: Platform.OS === "ios" ? 'Aleo-Bold': 'aleo_bold'
-//   },
-//   glassText:{
-//     fontSize: Size.FONT_SIZE,
-//     fontFamily: Platform.OS === "ios" ? 'Aleo-Bold': 'aleo_bold',
-//   },
-//   glassBox:{
-//     padding: Size.UNIT * .2,
-//   },
-//   midImage:{
-//     height: Size.UNIT * 7,
-//     width: Size.UNIT * 7
-//   },
-//   largeImage:{
-//     height: Size.UNIT * 13,
-//     width: Size.UNIT * 13
-//   },
-//   backButton:{
-//     fontSize: Size.UNIT
-//   },
-//   mixScrollBox:{
-//     height : Size.UNIT * 24,
-//     padding: Size.UNIT
-//   }
-// })
-
-// module.exports = appStyles;
 import {
   Platform,
   StyleSheet,
@@ -99,30 +7,12 @@ import {
 import Size from './dimensions'
 import colors from './colors'
 
-//Size.UNIT = PixelRatio.get()*.5
+import EStyleSheet from 'react-native-extended-stylesheet';
 
-var deviceWidth = Dimensions.get('window').width;
-
-var normalizer;
-//const ratioY = deviceHeight < 568 ? (deviceHeight < 480 ? 0.75 : 0.875) : 1 ;
-if (deviceWidth < 480){
-  normalizer = .75
-}
-else if (deviceWidth < 568){
-  normalizer = .875
-}
-else if (deviceWidth > 650){
-  normalizer = 1.2
-}
-// We're simulating EM by changing font size according to Ratio
-Size.UNIT = normalizer;
-
-
-
-appStyles = StyleSheet.create({
+appStyles = EStyleSheet.create({
   header:{
     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
-    fontSize: 30*Size.UNIT,
+    fontSize: "30rem",
     color: '#00648c',
     textAlign: 'center',
     alignSelf: 'center'
@@ -136,72 +26,70 @@ appStyles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    paddingVertical: 12*Size.UNIT,
-    paddingHorizontal: 24*Size.UNIT,
-    borderWidth: 2*Size.UNIT,
-    borderRadius: 8*Size.UNIT,
-    margin: 1*Size.UNIT,
+    paddingVertical: "12rem",
+    paddingHorizontal: "24rem",
+    borderWidth:"2rem",
+    borderRadius:"8rem",
+    margin:"1rem",
   },
   wideRowText:{
-    fontSize: 18*Size.UNIT,
+    fontSize: "18rem",
     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
   },
   narrowRow:{
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderWidth: 1*Size.UNIT,
-    borderRadius: 6*Size.UNIT,
-    paddingVertical: 9*Size.UNIT,
-    margin: 1*Size.UNIT,
-    paddingHorizontal: 24*Size.UNIT
+    borderWidth:"1rem",
+    borderRadius:"6rem",
+    paddingVertical:"9rem",
+    margin: "1rem",
+    paddingHorizontal: "24rem"
   },
   narrowRowText:{
-    fontSize: 18*Size.UNIT,
+    fontSize: "18rem",
     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
   },
   textInput:{
-    fontSize: 20*Size.UNIT,
-    height: 40*Size.UNIT,
-    borderWidth: 2*Size.UNIT,
-    margin: 1*Size.UNIT,
-    borderRadius: 8*Size.UNIT,
-    paddingHorizontal: 24*Size.UNIT,
+    fontSize: "20rem",
+    height: "40rem",
+    borderWidth:" 2rem",
+    margin: "1rem",
+    borderRadius: "8rem",
+    paddingHorizontal: "24rem",
     fontFamily: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold',
   },
   tabBarSpacer:{
-    height: 60*Size.UNIT
+    height: "60rem"
   },
   recipeText:{
-    fontSize: 18*Size.UNIT,
+    fontSize: "18rem",
     textAlign: 'center',
     fontFamily: Platform.OS === "ios" ? 'Aleo-Bold': 'aleo_bold'
   },
   glassText:{
-    fontSize: 16*Size.UNIT,
+    fontSize: "16rem",
     fontFamily: Platform.OS === "ios" ? 'Aleo-Bold': 'aleo_bold',
   },
   glassBox:{
-    padding: 3*Size.UNIT,
+    padding: "3rem",
   },
   midImage:{
-    //height: 100*Size.UNIT,
-    //width: 100*Size.UNIT,
+    height: "100rem",
+    width: "100rem",
     alignSelf: 'center'
   },
   largeImage:{
-    //height: 200*Size.UNIT,
-    //width: 200*Size.UNIT
+    height: "200rem",
+    width: "200rem"
   },
   backButton:{
-    fontSize: 29*Size.UNIT,
-    marginLeft: 0*Size.UNIT
+    fontSize: "29rem",
+    marginLeft: "0rem"
   },
   mixScrollBox:{
-    margin: 16*Size.UNIT,
-    height: 310*Size.UNIT,
-    //borderWidth: 3*Size.UNIT,
-    //borderColor: colors.beige
+    margin: "16rem",
+    height: "600rem",
   }
 })
 

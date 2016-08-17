@@ -19,6 +19,8 @@ import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 import BackButton from '../components/BackButton'
 
+import EStyleSheet from 'react-native-extended-stylesheet'
+
 const martini_glass = require('../styles/img/martini_glass.png');
 const hurricane_glass = require('../styles/img/hurricane_glass.png');
 const shot_glass = require('../styles/img/shot_glass.png');
@@ -82,6 +84,7 @@ class CocktailShowScreen extends Component {
         <Text style={appStyles.header}>
           {toTitleCase(this.state.cocktail.name)}
         </Text>
+        {/* View here helps with centering the Cocktail Name */} 
         <View/>
       </View>
 
@@ -120,7 +123,6 @@ class CocktailShowScreen extends Component {
 
         </View>
       </ScrollView>
-      <View style={styles.spacer}/>
     </View>
 
     </ViewContainer>
@@ -136,21 +138,21 @@ const styles = StyleSheet.create({
   },
   cocktailBodyContainer:{
     padding: 15,
-    alignItems: 'center'
+    alignItems: 'center',
+    flex: 1
   },
   cocktailBody:{
     alignSelf: 'center',
     backgroundColor: colors.beige,
-    padding: 15
+    padding: 15,
+    flex: 1
   },
   recipeBox:{
     borderWidth: 1,
     borderColor: colors.beige,
     backgroundColor: colors.yellow,
-    padding: 5
-  },
-  spacer:{
-    height:50
+    padding: 5,
+    flex: 1
   }
 });
 

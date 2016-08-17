@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/thomasobrien/Desktop/capstone/shaker/node_modules/rn-splash-screen/android/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="SplashAnimation">
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowAnimationStyle">@style/SplashAnimation</item>
+    </style>
+</resources>

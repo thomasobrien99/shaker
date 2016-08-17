@@ -6,7 +6,8 @@ import {
   Text,
   View,
   AsyncStorage,
-  Image
+  Image,
+  Dimensions
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator'
 import ScrollableTabView from 'react-native-scrollable-tab-view'
@@ -16,6 +17,14 @@ import IngredientNavigator from './app/navigation/IngredientNavigator'
 import MixNavigator from './app/navigation/MixNavigator'
 import ViewContainer from './app/components/ViewContainer'
 import NavigationPane from './app/components/NavigationPane'
+
+import EStylesheet from 'react-native-extended-stylesheet'
+
+let {height, width} = Dimensions.get('window');
+
+EStylesheet.build({
+  rem: (width < 480 ? .875 : (width < 568 ? 1 : (width < 1.125 ? 1 : 1.25)))
+});
 
 class shaker extends Component {
   constructor(props) {

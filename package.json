@@ -9,6 +9,7 @@
     "@remobile/react-native-splashscreen": "^1.0.3",
     "react": "15.2.1",
     "react-native": "0.29.2",
+    "react-native-extended-stylesheet": "^0.3.0",
     "react-native-loading-spinner-overlay": "^0.2.3",
     "react-native-scrollable-tab-view": "^0.5.3",
     "react-native-tab-navigator": "^0.3.2",

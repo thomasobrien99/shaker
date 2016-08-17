@@ -24,7 +24,7 @@ class MixIngredientsPage extends Component {
     this.state =  { 
       myIngredientsDatasource : ds.cloneWithRows({}), 
       ingredientData:[],
-      refreshing: false,
+      refreshing: true,
       barEmpty: false
     }
   }
@@ -40,7 +40,8 @@ class MixIngredientsPage extends Component {
         this.setState({
           myIngredientsDatasource : ds.cloneWithRows(data),
           ingredientData: data,
-          barEmpty : !!data.length
+          barEmpty : !!data.length,
+          refreshing: false,
         })
       }.bind(this))
       .catch((err)=>{
@@ -78,6 +79,7 @@ class MixIngredientsPage extends Component {
         
         <View style={[appStyles.mixScrollBox]}>
           <ScrollView
+            style={{padding: 5}}
             refreshControl={
               <RefreshControl
                 refreshing={this.state.refreshing}

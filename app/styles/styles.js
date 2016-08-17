@@ -97,6 +97,7 @@ import {
   Dimensions
 } from 'react-native'
 import Size from './dimensions'
+import colors from './colors'
 
 Size.UNIT = 1
 //Size.UNIT = PixelRatio.get()*.5
@@ -194,11 +195,14 @@ appStyles = StyleSheet.create({
     width: 200*Size.UNIT
   },
   backButton:{
-    fontSize: 24*Size.UNIT,
+    fontSize: 29*Size.UNIT,
     marginLeft: 0*Size.UNIT
   },
   mixScrollBox:{
-    padding: 16*Size.UNIT
+    margin: 16*Size.UNIT,
+    height: 310*Size.UNIT,
+    //borderWidth: 3*Size.UNIT,
+    //borderColor: colors.beige
   }
 })
 

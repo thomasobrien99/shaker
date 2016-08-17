@@ -22,7 +22,7 @@ class MixCocktailsScreen extends Component {
     ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 != r2})
     this.state = {
       myCocktailsDataSource : ds.cloneWithRows({}),
-      refreshing: false,
+      refreshing: true,
       cocktailData:[],
       barFull: false
     }
@@ -38,7 +38,8 @@ class MixCocktailsScreen extends Component {
         this.setState({
           myCocktailsDataSource : ds.cloneWithRows(data),
           cocktailData:data,
-          barFull: !!data.length
+          barFull: !!data.length,
+          refreshing: false
         })
       }.bind(this))
       .catch((err)=>{
@@ -75,7 +76,7 @@ class MixCocktailsScreen extends Component {
       
       <View style={styles.spaceBetween}>
         
-        <View style={[appStyles.mixScrollBox]}>
+        <View style={[appStyles.mixScrollBox, {borderColor:colors.beige}]}>
           <ScrollView
             refreshControl={
               <RefreshControl

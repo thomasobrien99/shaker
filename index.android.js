@@ -5,7 +5,8 @@ import {
   StyleSheet,
   Text,
   View,
-  AsyncStorage
+  AsyncStorage,
+  Image
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator'
 import ScrollableTabView from 'react-native-scrollable-tab-view'
@@ -43,7 +44,8 @@ class shaker extends Component {
         <TabNavigator.Item
           selected={this.state.selectedTab === 'ingredientsTab'}
           title="Ingredients"
-          onPress={() => this.setState({ selectedTab: 'ingredientsTab' })}>
+          onPress={() => this.setState({ selectedTab: 'ingredientsTab' })}
+          renderIcon = {()=><Image source={require('./app/styles/img/ingredients_icon.png')}/>}>
           <IngredientNavigator
             changeSelectedTab={this._changeSelectedTab.bind(this)} 
             newRoute={this.state.newRoute}/>
@@ -51,7 +53,8 @@ class shaker extends Component {
         <TabNavigator.Item
           selected={this.state.selectedTab === 'cocktailsTab'}
           title="Cocktails"
-          onPress={() => this.setState({ selectedTab: 'cocktailsTab' })}>
+          onPress={() => this.setState({ selectedTab: 'cocktailsTab' })}
+          renderIcon = {()=><Image source={require('./app/styles/img/cocktails_icon.png')}/>}>
           <CocktailNavigator
             changeSelectedTab={this._changeSelectedTab.bind(this)} 
             newRoute={this.state.newRoute}/>
@@ -59,7 +62,8 @@ class shaker extends Component {
         <TabNavigator.Item
           selected={this.state.selectedTab === 'mixTab'}
           title="Mix"
-          onPress={() => this.setState({ selectedTab: 'mixTab' })}>
+          onPress={() => this.setState({ selectedTab: 'mixTab' })}
+          renderIcon = {()=><Image source={require('./app/styles/img/bar_icon.png')}/>}>
           <MixNavigator
             changeSelectedTab={this._changeSelectedTab.bind(this)} 
             newRoute={this.state.newRoute}/>  

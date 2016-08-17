@@ -14,6 +14,7 @@ import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 import toTitleCase from '../services/helpers'
 
+import EStyleSheet from 'react-native-extended-stylesheet'
 class CocktailsByCategoryScreen extends Component {
   constructor(props) {
     super(props)
@@ -26,8 +27,8 @@ class CocktailsByCategoryScreen extends Component {
     return (
     <ViewContainer>
       <StatusBarBackground/>
-      <View style={appStyles.viewCenter}>
-        <Text style={appStyles.header}>COCKTAIL CATEGORIES</Text>
+      <View style={styles.viewCenter}>
+        <Text style={styles.header}>COCKTAIL CATEGORIES</Text>
       </View>
       <ListView
         dataSource = {this.state.cocktailDataSource}
@@ -55,5 +56,19 @@ class CocktailsByCategoryScreen extends Component {
   }
 }
 
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: '$appFont',
+    fontSize: "30rem",
+    color: '$headerColor',
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  }
+})
 
 module.exports = CocktailsByCategoryScreen;

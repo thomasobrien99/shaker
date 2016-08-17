@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome'
-import {View, StyleSheet, AsyncStorage, TouchableHighlight } from 'react-native';
+import {View, AsyncStorage, TouchableHighlight } from 'react-native';
 
 class AddCocktailButton extends Component {
 	constructor(props){

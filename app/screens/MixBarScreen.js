@@ -4,17 +4,16 @@ import {
   View,
   AsyncStorage,
   ListView,
-  ScrollView,
-  StyleSheet,
-  RefreshControl,
-  Dimensions
+  RefreshControl
 } from 'react-native';
+
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
 import BackButton from '../components/BackButton'
-import appStyles from '../styles/styles'
 import colors from '../styles/colors'
+
+import EStyleSheet from 'react-native-extended-stylesheet'
 
 class MixIndexPage extends Component {
   constructor(props) {
@@ -55,13 +54,13 @@ class MixIndexPage extends Component {
     <ViewContainer>
       <StatusBarBackground/>
 
-      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>What I Can Make</Text>
+        <Text style={styles.header}>What I Can Make</Text>
         <View/>
       </View>
       
-      <Text style={appStyles.header}>{this.state.noResultsMessage}</Text>
+      <Text style={styles.header}>{this.state.noResultsMessage}</Text>
       <ListView
         refreshControl={
           <RefreshControl
@@ -106,10 +105,22 @@ class MixIndexPage extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   addIngredientsText:{
-    color: colors.darkBlue,
-    fontFamily: 'Aleo-Bold'
+    color: '$headerColor',
+    fontFamily: '$appFont'
+  },
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
   }
 })
 

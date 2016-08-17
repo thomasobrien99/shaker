@@ -3,26 +3,23 @@ import {
   Text,
   View,
   TouchableOpacity,
-  ListView,
   ScrollView,
   AsyncStorage,
   RefreshControl,
-  StyleSheet
 } from 'react-native';
+
+import EStyleSheet from 'react-native-extended-stylesheet'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import IngredientRow from '../components/IngredientRow'
 import BackButton from '../components/BackButton'
-import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 
 class MixIngredientsPage extends Component {
   constructor(props) {
     super(props)
-    ds = new ListView.DataSource({rowHasChanged:(r1, r2) => r1 != r2})
     this.state =  { 
-      myIngredientsDatasource : ds.cloneWithRows({}), 
       ingredientData:[],
       refreshing: true,
       barEmpty: false
@@ -38,7 +35,6 @@ class MixIngredientsPage extends Component {
       .then(function(data){
         console.log(data)
         this.setState({
-          myIngredientsDatasource : ds.cloneWithRows(data),
           ingredientData: data,
           barEmpty : !!data.length,
           refreshing: false,
@@ -58,9 +54,9 @@ class MixIngredientsPage extends Component {
 
       <StatusBarBackground/>
       
-      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>My Ingredients:</Text>
+        <Text style={styles.header}>My Ingredients:</Text>
         <View/>
       </View>
 
@@ -68,15 +64,13 @@ class MixIngredientsPage extends Component {
         onPress={()=>{
           this.props.navigator.props.changeSelectedTab('ingredientsTab', {ident:'index'})
         }}>
-        <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
-          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>
+        <View style={[styles.wideRow, {backgroundColor: colors.beige}]}>
+          <Text style={[styles.wideRowText, {color: colors.darkBlue}]}>
             Add Ingredients
           </Text>
         </View>
       </TouchableOpacity>
-      
-      
-        
+    
         <View style={styles.spaceBetween}>
           <ScrollView
             style={{padding: 5}}
@@ -96,13 +90,11 @@ class MixIngredientsPage extends Component {
             this._emptyBarIngredients()
             this.props.navigator.pop()
           }}>
-          <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
-            <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>Remove All Ingredients From Bar</Text>
+          <View style={[styles.wideRow, {backgroundColor: colors.beige}]}>
+            <Text style={[styles.wideRowText, {color: colors.darkBlue}]}>Remove All Ingredients From Bar</Text>
           </View>
         </TouchableOpacity>:<Text/>}
       
-
-    
     </ViewContainer>
     )
   }
@@ -149,9 +141,35 @@ class MixIngredientsPage extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
   spaceBetween:{
     flex:1
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  },
+  wideRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingVertical: "12rem",
+    paddingHorizontal: "24rem",
+    borderWidth:"2rem",
+    borderRadius:"8rem",
+    margin:"1rem",
+  },
+  wideRowText:{
+    fontSize: "18rem",
+    fontFamily: "$appFont"
   }
 });
 

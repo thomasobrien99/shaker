@@ -7,6 +7,7 @@ import AddIngredientButton from './AddIngredientButton'
 import toTitleCase from '../services/helpers'
 import appStyles from '../styles/styles'
 import colors from '../styles/colors'
+import EStyleSheet from 'react-native-extended-stylesheet'
 
 
 class IngredientRow extends Component {
@@ -14,17 +15,34 @@ class IngredientRow extends Component {
 		return (
 			<TouchableOpacity 
         style={[
-          appStyles.narrowRow, 
+          styles.narrowRow, 
           {backgroundColor: colors.darkBlue}
           ]} 
           onPress={this.props.onPress}>
-              <Text style={[appStyles.narrowRowText, {color:"white"}]}>{toTitleCase(this.props.ingredient.name)}</Text>
-              <Text style={[appStyles.narrowRowText, {color:"white"}]}>{this.props.amount}</Text>
-              <AddIngredientButton style={[appStyles.narrowRowText]} ingredientId = {this.props.ingredient.id}/>
+              <Text style={[styles.narrowRowText, {color:"white"}]}>{toTitleCase(this.props.ingredient.name)}</Text>
+              <Text style={[styles.narrowRowText, {color:"white"}]}>{this.props.amount}</Text>
+              <AddIngredientButton style={[styles.narrowRowText]} ingredientId = {this.props.ingredient.id}/>
             </TouchableOpacity>
 			)
 		}
 }
+
+const styles = EStyleSheet.create({
+  narrowRow:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderWidth:"1rem",
+    borderRadius:"6rem",
+    paddingVertical:"9rem",
+    margin: "1rem",
+    paddingHorizontal: "24rem"
+  },
+  narrowRowText:{
+    fontSize: "18rem",
+    fontFamily: '$appFont'
+  }
+})
 
 module.exports = IngredientRow
   

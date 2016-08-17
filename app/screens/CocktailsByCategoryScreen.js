@@ -7,6 +7,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 
+import EStyleSheet from 'react-native-extended-stylesheet'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
@@ -41,9 +42,9 @@ class CocktailsByCategoryScreen extends Component {
     <ViewContainer>
       <StatusBarBackground/>
       
-      <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor: colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>COCKTAIL CATEGORIES</Text>
+        <Text style={styles.header}>COCKTAIL CATEGORIES</Text>
         <View/>
       </View>
       
@@ -58,8 +59,8 @@ class CocktailsByCategoryScreen extends Component {
   }
   _renderCategoryRow(category) {
     return (
-      <TouchableOpacity style={[appStyles.wideRow, {backgroundColor:colors.darkBlue}]} onPress={()=>this._navigateToCategoryShow(category.name)}>
-        <Text style={[appStyles.wideRowText, {color:'white'}]}>{toTitleCase(category.name)}</Text>
+      <TouchableOpacity style={[styles.wideRow, {backgroundColor:colors.darkBlue}]} onPress={()=>this._navigateToCategoryShow(category.name)}>
+        <Text style={[styles.wideRowText, {color:'white'}]}>{toTitleCase(category.name)}</Text>
       </TouchableOpacity>
       )
   }
@@ -72,6 +73,35 @@ class CocktailsByCategoryScreen extends Component {
     })
   }
 }
+
+const styles = EStyleSheet.create({
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  },
+  header:{
+    fontFamily: '$appFont',
+    fontSize: "30rem",
+    color: '$headerColor',
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  wideRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingVertical: "12rem",
+    paddingHorizontal: "24rem",
+    borderWidth:"2rem",
+    borderRadius:"8rem",
+    margin:"1rem",
+  },
+  wideRowText:{
+    fontSize: "18rem",
+    fontFamily: '$appFont'
+  }
+})
 
 
 module.exports = CocktailsByCategoryScreen;

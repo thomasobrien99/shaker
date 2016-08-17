@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   ListView,
@@ -9,10 +8,11 @@ import {
   RefreshControl
 } from 'react-native';
 
+import EStyleSheet from 'react-native-extended-stylesheet'
+
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
-import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 import BackButton from '../components/BackButton'
 
@@ -52,14 +52,14 @@ class CocktailsByNameScreen extends Component {
     <ViewContainer>
       <StatusBarBackground/>
 
-      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>COCKTAILS</Text>
+        <Text style={styles.header}>COCKTAILS</Text>
         <View/>
       </View>
       
       <TextInput 
-        style={[appStyles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
+        style={[styles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
         onChangeText={(text)=>this._updateSearch(text)} 
         value={this.state.searchText}
         onFocus={()=>this.setState({searchText:''})}
@@ -105,5 +105,28 @@ class CocktailsByNameScreen extends Component {
   }
 }
 
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  textInput:{
+    fontSize: "20rem",
+    height: "40rem",
+    borderWidth:" 2rem",
+    margin: "1rem",
+    borderRadius: "8rem",
+    paddingHorizontal: "24rem",
+    fontFamily: '$appFont'
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  }
+})
 
 module.exports = CocktailsByNameScreen;

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   TouchableOpacity,
   ListView,
   RefreshControl
 } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import StatusBarBackground from '../components/StatusBarBackground'
 import ViewContainer from '../components/ViewContainer'
@@ -46,14 +46,14 @@ class IngredientsShowScreen extends Component {
       
       <StatusBarBackground/>
       
-      <View style={[appStyles.viewCenter,{backgroundColor:colors.yellow}]}>
+      <View style={[styles.viewCenter,{backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={[appStyles.header]}>{toTitleCase(this.state.ingredient.name)}</Text>
+        <Text style={[styles.header]}>{toTitleCase(this.state.ingredient.name)}</Text>
         <View/>
       </View>
 
       <View style={{backgroundColor: colors.yellow}}>
-        <Text style={appStyles.header}>Make These Drinks:</Text>
+        <Text style={styles.header}>Make These Drinks:</Text>
       </View>
       
       <ListView
@@ -79,5 +79,19 @@ class IngredientsShowScreen extends Component {
   }
 }
 
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  }
+})
 
 module.exports = IngredientsShowScreen;

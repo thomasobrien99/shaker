@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   ListView,
   TextInput,
   RefreshControl
 } from 'react-native';
+
+import EStyleSheet from 'react-native-extended-stylesheet'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import IngredientRow from '../components/IngredientRow'
-import appStyles from '../styles/styles'
+
 import colors from '../styles/colors'
 
 class IngredientsIndexScreen extends Component {
@@ -44,15 +45,16 @@ class IngredientsIndexScreen extends Component {
       <StatusBarBackground/>
 
       <View style={{backgroundColor:colors.yellow}}>
-          <Text style={appStyles.header}>INGREDIENTS</Text>
+          <Text style={styles.header}>INGREDIENTS</Text>
       </View>
 
       <TextInput 
         onFocus={()=>this.setState({searchText:''})} 
         onChangeText={(text)=>this._updateSearchText(text)}
-        style={[appStyles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
+        style={[styles.textInput, {color: colors.darkBlue, borderColor: colors.darkBlue}]}
         value={this.state.searchText}
         />
+
       <ListView
         dataSource = {this.state.ingredientDataSource}
         renderRow = {(ingredient)=> { return this._renderIngredientRow(ingredient)}}
@@ -63,6 +65,7 @@ class IngredientsIndexScreen extends Component {
             refreshing={this.state.refreshing}
             />
         } />
+
     </ViewContainer>
     )
   }
@@ -85,10 +88,28 @@ class IngredientsIndexScreen extends Component {
   }
   _navigateToIngredientShow(ingredient){
     this.props.navigator.push({
-      ident: "show",
+      ident: 'show',
       ingredient
     })
   }
 }
 
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: '$headerColor',
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
+  textInput:{
+    fontSize: "20rem",
+    height: "40rem",
+    borderWidth:" 2rem",
+    margin: "1rem",
+    borderRadius: "8rem",
+    paddingHorizontal: "24rem",
+    fontFamily: "$appFont"
+  }
+})
 module.exports = IngredientsIndexScreen;

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
-  StyleSheet,
   Text,
   View,
   Image,
@@ -15,7 +13,7 @@ import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import IngredientRow from '../components/IngredientRow'
 import toTitleCase from '../services/helpers'
-import appStyles from '../styles/styles'
+
 import colors from '../styles/colors'
 import BackButton from '../components/BackButton'
 
@@ -79,17 +77,17 @@ class CocktailShowScreen extends Component {
     <ViewContainer>
       <StatusBarBackground/>
 
-      <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor: colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>
+        <Text style={styles.header}>
           {toTitleCase(this.state.cocktail.name)}
         </Text>
         {/* View here helps with centering the Cocktail Name */} 
         <View/>
       </View>
 
-      <View style={[appStyles.viewCenter, {alignSelf:'center'}, styles.borderBottom]}>
-        <Image source={this.state.cocktailGlassImg} style = {appStyles.largeImage}/>
+      <View style={[styles.viewCenter, {alignSelf:'center'}, styles.borderBottom]}>
+        <Image source={this.state.cocktailGlassImg} style = {styles.largeImage}/>
       </View>
 
       <View style={styles.cocktailBodyContainer}>
@@ -101,8 +99,8 @@ class CocktailShowScreen extends Component {
           }>
         
         <View style={styles.cocktailBody}>
-          <View style={[appStyles.glassBox, {backgroundColor:colors.yellow}]}>
-            <Text style={[{color: colors.darkBlue}, appStyles.glassText]}>{toTitleCase(this.state.cocktail.glass)}</Text>
+          <View style={[styles.glassBox, {backgroundColor:colors.yellow}]}>
+            <Text style={[{color: colors.darkBlue}, styles.glassText]}>{toTitleCase(this.state.cocktail.glass)}</Text>
           </View>
 
           {this.state.cocktail.ingredients.map((ingredient, i)=>{
@@ -116,7 +114,7 @@ class CocktailShowScreen extends Component {
           })}
 
           <View style={styles.recipeBox}>
-            <Text style={appStyles.recipeText}>
+            <Text style={styles.recipeText}>
               {this.state.cocktail.recipe}
             </Text>
           </View>
@@ -130,7 +128,7 @@ class CocktailShowScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
   borderBottom:{
     paddingBottom: 10,
     borderBottomWidth: 10,
@@ -147,12 +145,40 @@ const styles = StyleSheet.create({
     padding: 15,
     flex: 1
   },
+  header:{
+    fontFamily: '$appFont',
+    fontSize: "30rem",
+    color: '#00648c',
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
   recipeBox:{
     borderWidth: 1,
     borderColor: colors.beige,
     backgroundColor: colors.yellow,
     padding: 5,
     flex: 1
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  },
+  largeImage:{
+    height: "250rem",
+    width: "250rem"
+  },
+  glassText:{
+    fontSize: "16rem",
+    fontFamily: "$appFont",
+  },
+  glassBox:{
+    padding: "3rem",
+  },
+  recipeText:{
+    fontSize: "18rem",
+    textAlign: 'center',
+    fontFamily: '$appFont'
   }
 });
 

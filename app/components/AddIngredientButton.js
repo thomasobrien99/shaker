@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome'
-import {View, StyleSheet, AsyncStorage, TouchableOpacity } from 'react-native';
+import {View, AsyncStorage, TouchableOpacity } from 'react-native';
 import colors from '../styles/colors'
 
 class AddIngredientButton extends Component {

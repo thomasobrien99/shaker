@@ -7,7 +7,8 @@ import {
   Navigator,
   TabBarIOS,
   Dimensions,
-  AsyncStorage
+  AsyncStorage,
+  Platform
 } from 'react-native';
 
 import CocktailNavigator from './app/navigation/CocktailNavigator'
@@ -20,7 +21,9 @@ import EStylesheet from 'react-native-extended-stylesheet'
 let {height, width} = Dimensions.get('window');
 
 EStylesheet.build({
-  rem: (width < 480 ? .875 : (width < 568 ? 1 : (width < 1.125 ? 1 : 1.25)))
+  rem: (width < 480 ? .875 : (width < 568 ? 1 : (width < 1.125 ? 1 : 1.25))),
+  headerColor: '#00648c', //darkblue
+  appFont: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold'
 });
 
 

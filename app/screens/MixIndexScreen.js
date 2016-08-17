@@ -3,13 +3,12 @@ import {
   Text,
   View,
   TouchableOpacity,
-  Image,
-  StyleSheet,
-  Dimensions
+  Image
 } from 'react-native';
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
-import appStyles from '../styles/styles'
+
+import EStyleSheet from 'react-native-extended-stylesheet'
 
 class MixIndexPage extends Component {
   constructor(props) {
@@ -18,23 +17,28 @@ class MixIndexPage extends Component {
   render() {
     return (
     <ViewContainer>
+      
       <StatusBarBackground/>
+        
         <View style={styles.mainSections}>
+          
           <TouchableOpacity onPress={()=>this._navigateToMyMixPage()}>
-            <Image source={require('../styles/img/shaker.png')} style={appStyles.midImage}/>
-            <Text style={appStyles.header}>What Can I Make?</Text>
+            <Image source={require('../styles/img/shaker.png')} style={styles.midImage}/>
+            <Text style={styles.header}>What Can I Make?</Text>
           </TouchableOpacity>
           
           <TouchableOpacity onPress={()=>this._navigateToMyIngredientsPage()}>
-            <Image source={require('../styles/img/ingredients.png')} style={appStyles.midImage}/>
-            <Text style={appStyles.header}>My Ingredients</Text>
+            <Image source={require('../styles/img/ingredients.png')} style={styles.midImage}/>
+            <Text style={styles.header}>My Ingredients</Text>
           </TouchableOpacity>
           
           <TouchableOpacity onPress={()=>this._navigateToMyCocktailsPage()}>
-            <Image source={require('../styles/img/mycocktails.png')} style={appStyles.midImage}/>
-            <Text style={appStyles.header}>My Cocktails</Text>
+            <Image source={require('../styles/img/mycocktails.png')} style={styles.midImage}/>
+            <Text style={styles.header}>My Cocktails</Text>
           </TouchableOpacity>
+        
         </View>
+    
     </ViewContainer>
     )
   }
@@ -54,12 +58,24 @@ class MixIndexPage extends Component {
     })
   }
 }
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
   mainSections: {
     flex:1,
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    margin: 15
+    alignItems: "center",
+    justifyContent: "space-around",
+    margin: "15rem"
+  },
+  midImage:{
+    height: "100rem",
+    width: "100rem",
+    alignSelf: 'center'
   }
 })
 module.exports = MixIndexPage;

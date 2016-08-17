@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   TouchableOpacity,
@@ -8,11 +7,12 @@ import {
   RefreshControl
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome'
+import EStyleSheet from 'react-native-extended-stylesheet'
+
 import StatusBarBackground from '../components/StatusBarBackground'
 import ViewContainer from '../components/ViewContainer'
 import CocktailRow from '../components/CocktailRow'
 import toTitleCase from '../services/helpers'
-import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 import BackButton from '../components/BackButton'
 
@@ -45,16 +45,17 @@ class CocktailCategoryShowScreen extends Component {
     <ViewContainer>
       <StatusBarBackground/>
      
-      <View style={[appStyles.viewCenter, {backgroundColor: colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor: colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>
+        <Text style={styles.header}>
           Category:
         </Text>
+      {/* VIEW HERE HELPS WITH CENTERING*/}
         <View/>
       </View>
 
       <View style={{backgroundColor: colors.yellow}}>
-        <Text style={appStyles.header}>
+        <Text style={styles.header}>
           {`${toTitleCase(this.props.categoryName.replace(/[_]/g, ' ').replace(/[!]/g, '/'))}`}
         </Text>
       </View>
@@ -67,7 +68,7 @@ class CocktailCategoryShowScreen extends Component {
           <RefreshControl
             refreshing = {this.state.refreshing}
           />}
-          />
+      />
     </ViewContainer>
     )
   }
@@ -82,9 +83,21 @@ class CocktailCategoryShowScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: '$appFont',
+    fontSize: "30rem",
+    color: '$headerColor',
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
   spaceBetween:{
     justifyContent: 'space-between'
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
   }
 });
 

@@ -5,10 +5,11 @@ import {
   TouchableOpacity,
   ListView,
   AsyncStorage,
-  StyleSheet,
   RefreshControl,
   ScrollView
 } from 'react-native';
+
+import EStyleSheet from 'react-native-extended-stylesheet'
 import Icon from 'react-native-vector-icons/FontAwesome'
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
@@ -56,9 +57,9 @@ class MixCocktailsScreen extends Component {
       
       <StatusBarBackground/>
 
-      <View style={[appStyles.viewCenter, {backgroundColor:colors.yellow}]}>
+      <View style={[styles.viewCenter, {backgroundColor:colors.yellow}]}>
         <BackButton nav={this.props.navigator}/>
-        <Text style={appStyles.header}>My Cocktails:</Text>
+        <Text style={styles.header}>My Cocktails:</Text>
         <View/>
       </View>
 
@@ -67,8 +68,8 @@ class MixCocktailsScreen extends Component {
           this.props.navigator.props.changeSelectedTab('cocktailsTab', {ident: 'index'})
           this.props.navigator.pop()
         }}>
-        <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
-          <Text style={[appStyles.wideRowText, {color: colors.darkBlue}]}>
+        <View style={[styles.wideRow, {backgroundColor: colors.beige}]}>
+          <Text style={[styles.wideRowText, {color: colors.darkBlue}]}>
             Add Cocktails
           </Text>
         </View>
@@ -76,7 +77,7 @@ class MixCocktailsScreen extends Component {
       
       <View style={styles.spaceBetween}>
         
-        <View style={[appStyles.mixScrollBox, {borderColor:colors.beige}]}>
+        <View style={[styles.mixScrollBox, {borderColor:colors.beige}]}>
           <ScrollView
             refreshControl={
               <RefreshControl
@@ -94,8 +95,8 @@ class MixCocktailsScreen extends Component {
               this._emptyBarCocktails()
               this.props.navigator.pop()
             }}>
-              <View style={[appStyles.wideRow, {backgroundColor: colors.beige}]}>
-                <Text style={[appStyles.wideRowText, {color: colors.darkBlue}, styles.textTest]}>Remove All Cocktails From Bar</Text>
+              <View style={[styles.wideRow, {backgroundColor: colors.beige}]}>
+                <Text style={[styles.wideRowText, {color: colors.darkBlue}, styles.textTest]}>Remove All Cocktails From Bar</Text>
               </View>
           </TouchableOpacity>:<Text/>}
       
@@ -149,10 +150,39 @@ class MixCocktailsScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
+  header:{
+    fontFamily: "$appFont",
+    fontSize: "30rem",
+    color: "$headerColor",
+    textAlign: 'center',
+    alignSelf: 'center'
+  },
   spaceBetween:{
-    flex:1,
-    justifyContent: 'space-between'
+    flex:1
+  },
+  viewCenter:{
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems:'center'
+  },
+  wideRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingVertical: "12rem",
+    paddingHorizontal: "24rem",
+    borderWidth:"2rem",
+    borderRadius:"8rem",
+    margin:"1rem",
+  },
+  wideRowText:{
+    fontSize: "18rem",
+    fontFamily: "$appFont"
+  },
+  mixScrollBox:{
+    margin: "16rem",
+    height: "600rem",
   }
 });
 

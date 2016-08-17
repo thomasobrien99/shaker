@@ -2,107 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeca51a2-351c-41cd-a378-dc3028981bba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/shaker/Images.xcassets/AppIcon-2.appiconset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ios/shaker/Images.xcassets/Brand Assets-2.launchimage/Contents.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/shakerG22/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/shakerG22/MainApplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/9A0C2D06-B63D-420B-867D-6CACF0742271.xcactivitylog" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait-736h@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Default-Portrait@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/androidTest/debug/com/shakr/test/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/aidl/androidTest/debug/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeAssets/androidTest/debug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/incremental/mergeResourcesandroidTest/debug/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/app-release.apk" afterPath="$PROJECT_DIR$/android/app/app-release.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/assets/release/index.android.bundle.meta" afterPath="$PROJECT_DIR$/android/app/build/intermediates/assets/release/index.android.bundle.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/facebook/react/R$drawable.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/facebook/react/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/oblador/vectoricons/R$drawable.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/oblador/vectoricons/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakr/BuildConfig.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/debug/com/shakr/BuildConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/BuildConfig.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/BuildConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$drawable.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$id.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$integer.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$layout.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$mipmap.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$string.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$style.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$styleable.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$xml.class" afterPath="$PROJECT_DIR$/android/app/build/intermediates/classes/release/com/shakr/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/dex/release/classes.dex" afterPath="$PROJECT_DIR$/android/app/build/intermediates/dex/release/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/android/app/build/intermediates/dex/debug/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/exploded-aar/shakr/react-native-vector-icons/unspecified/jars/classes.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/exploded-aar/shakr/react-native-vector-icons/unspecified/jars/classes.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/mockable-android-23.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/mockable-android-23.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-208c115e0f56b721b33ee7dafab7095a749b9e42.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0-208c115e0f56b721b33ee7dafab7095a749b9e42.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-0cfd6304642c777e75d02bc74cb776b972eaedd9.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-0cfd6304642c777e75d02bc74cb776b972eaedd9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-1103471c6a318c90fa705824fd7bc3d212e280d3.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-1103471c6a318c90fa705824fd7bc3d212e280d3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-11cc495a48c2eff8256082692a42b4faa5da09c1.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-11cc495a48c2eff8256082692a42b4faa5da09c1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-150b2d8014bd57da607b769edbd105ea8b8ed2d9.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-150b2d8014bd57da607b769edbd105ea8b8ed2d9.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-1e8065a2949ed8151846cab1782ea7283adba0dc.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-1e8065a2949ed8151846cab1782ea7283adba0dc.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-225edc83f43621e1e6a77673a0445276c6199891.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-225edc83f43621e1e6a77673a0445276c6199891.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-3a47821f8a92c4936b42aa46108f89303922c668.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-3a47821f8a92c4936b42aa46108f89303922c668.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-5c898656b51e00c7042ea990159036fe4c99eea0.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-5c898656b51e00c7042ea990159036fe4c99eea0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-63a19fb09a9981b181d6b5fa443370a24e71849f.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-63a19fb09a9981b181d6b5fa443370a24e71849f.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-ad5dd9cca0e7e88e195c5886eed90940721e60a4.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-ad5dd9cca0e7e88e195c5886eed90940721e60a4.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-da3f9b7f64a4771d8c4588886fdd042705ab7189.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/classes-da3f9b7f64a4771d8c4588886fdd042705ab7189.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-5a8e74703623efb7f0ee44c83fe5bc5256093fbc.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-5a8e74703623efb7f0ee44c83fe5bc5256093fbc.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-4159cf05b7678f9fafb7cab293202bfdd702f1ee.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-4159cf05b7678f9fafb7cab293202bfdd702f1ee.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-762c951d7d9f3f40275e2bbb9946742cb358c02f.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-762c951d7d9f3f40275e2bbb9946742cb358c02f.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-53a1d647a552b4195b3f63c08d1399ca07bc6035.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-53a1d647a552b4195b3f63c08d1399ca07bc6035.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-426d17f739ef0de5afc7a3626b25270b6c5a4c53.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-426d17f739ef0de5afc7a3626b25270b6c5a4c53.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0-586964a55d8ccb7a213c10a3cf8370f364b815f8.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-3.2.0-586964a55d8ccb7a213c10a3cf8370f364b815f8.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.2.0-3052add33e9a9361bf911fd1a790dc6be401bd10.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.2.0-3052add33e9a9361bf911fd1a790dc6be401bd10.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.2.0-0bd5204e81ffcee18eb59bf9bd1af5be9848d44b.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.2.0-0bd5204e81ffcee18eb59bf9bd1af5be9848d44b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okio-1.8.0-ff63a45dfd334ebd243acbbef97b7d830b5042c7.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/okio-1.8.0-ff63a45dfd334ebd243acbbef97b7d830b5042c7.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-efe3d577ba55d5c4a415ac3ccd876cff97fcc57b.jar" afterPath="$PROJECT_DIR$/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-efe3d577ba55d5c4a415ac3ccd876cff97fcc57b.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/android/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/res/resources-release.ap_" afterPath="$PROJECT_DIR$/android/app/build/intermediates/res/resources-release.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/app-release-unaligned.apk" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/app-release-unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/app-release.apk" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/app-release.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTActionSheet.build/Debug-iphonesimulator/RCTActionSheet.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTActionSheet.build/Debug-iphonesimulator/RCTActionSheet.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTGeolocation.build/Debug-iphonesimulator/RCTGeolocation.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTGeolocation.build/Debug-iphonesimulator/RCTGeolocation.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTImage.build/Debug-iphonesimulator/RCTImage.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTImage.build/Debug-iphonesimulator/RCTImage.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTLinking.build/Debug-iphonesimulator/RCTLinking.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTLinking.build/Debug-iphonesimulator/RCTLinking.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTNetwork.build/Debug-iphonesimulator/RCTNetwork.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTNetwork.build/Debug-iphonesimulator/RCTNetwork.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTSettings.build/Debug-iphonesimulator/RCTSettings.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTSettings.build/Debug-iphonesimulator/RCTSettings.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTText.build/Debug-iphonesimulator/RCTText.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTText.build/Debug-iphonesimulator/RCTText.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTVibration.build/Debug-iphonesimulator/RCTVibration.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTVibration.build/Debug-iphonesimulator/RCTVibration.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTWebSocket.build/Debug-iphonesimulator/RCTWebSocket.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RCTWebSocket.build/Debug-iphonesimulator/RCTWebSocket.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/RNVectorIcons.build/Debug-iphonesimulator/RNVectorIcons.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/RNVectorIcons.build/Debug-iphonesimulator/RNVectorIcons.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/React.build/Debug-iphonesimulator/React.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shaker.build/Objects-normal/x86_64/shaker_dependency_info.dat" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shaker.build/Objects-normal/x86_64/shaker_dependency_info.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shaker.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shaker.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shakerTests.build/dgph" afterPath="$PROJECT_DIR$/ios/build/Build/Intermediates/shaker.build/Debug-iphonesimulator/shakerTests.build/dgph" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTActionSheet.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTActionSheet.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTGeolocation.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTGeolocation.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTImage.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTImage.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTLinking.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTLinking.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTNetwork.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTNetwork.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTSettings.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTSettings.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTText.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTText.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTVibration.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTVibration.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTWebSocket.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRCTWebSocket.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRNVectorIcons.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libRNVectorIcons.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReact.a" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/libReact.a" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/Info.plist" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/Info.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/LaunchScreen.nib" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/LaunchScreen.nib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/shaker" afterPath="$PROJECT_DIR$/ios/build/Build/Products/Debug-iphonesimulator/shaker.app/shaker" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" afterPath="$PROJECT_DIR$/ios/build/Logs/Build/Cache.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/shaker.xcodeproj/project.xcworkspace/xcuserdata/thomasobrien.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ios/shaker.xcodeproj/project.xcworkspace/xcuserdata/thomasobrien.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug-unaligned.apk" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/android/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/shaker.iml" afterPath="$PROJECT_DIR$/.idea/shaker.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/.idea/workspace.xml" afterPath="$PROJECT_DIR$/android/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/app.iml" afterPath="$PROJECT_DIR$/android/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build.gradle" afterPath="$PROJECT_DIR$/android/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/debug/com/shakr/BuildConfig.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/debug/com/shakr/BuildConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/release/com/shakr/BuildConfig.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/buildConfig/release/com/shakr/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/facebook/react/R.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/facebook/react/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/oblador/vectoricons/R.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/oblador/vectoricons/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/shakr/R.java" afterPath="$PROJECT_DIR$/android/app/build/generated/source/r/release/com/shakr/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/assets/release/index.android.bundle" afterPath="$PROJECT_DIR$/android/app/build/intermediates/assets/release/index.android.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/android/app/build/intermediates/symbols/release/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/android/app/build/outputs/lint-results-release-fatal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-release-report.txt" afterPath="$PROJECT_DIR$/android/app/build/outputs/logs/manifest-merger-release-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/AddIngredientButton.js" afterPath="$PROJECT_DIR$/app/components/AddIngredientButton.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/IngredientRow.js" afterPath="$PROJECT_DIR$/app/components/IngredientRow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/StatusBarBackground.js" afterPath="$PROJECT_DIR$/app/components/StatusBarBackground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/ViewContainer.js" afterPath="$PROJECT_DIR$/app/components/ViewContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/CocktailsByCategoryScreen.js" afterPath="$PROJECT_DIR$/app/screens/CocktailsByCategoryScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/CocktailsByNameScreen.js" afterPath="$PROJECT_DIR$/app/screens/CocktailsByNameScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/CocktailsIndexScreen.js" afterPath="$PROJECT_DIR$/app/screens/CocktailsIndexScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/CocktailsShowScreen.js" afterPath="$PROJECT_DIR$/app/screens/CocktailsShowScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/IngredientsIndexScreen.js" afterPath="$PROJECT_DIR$/app/screens/IngredientsIndexScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/IngredientsShowScreen.js" afterPath="$PROJECT_DIR$/app/screens/IngredientsShowScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/MixBarScreen.js" afterPath="$PROJECT_DIR$/app/screens/MixBarScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/MixCocktailsScreen.js" afterPath="$PROJECT_DIR$/app/screens/MixCocktailsScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/MixIndexScreen.js" afterPath="$PROJECT_DIR$/app/screens/MixIndexScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/screens/MixIngredientsScreen.js" afterPath="$PROJECT_DIR$/app/screens/MixIngredientsScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/CocktailRow.js" afterPath="$PROJECT_DIR$/app/components/CocktailRow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/styles.js" afterPath="$PROJECT_DIR$/app/styles/styles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/shaker.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ios/shaker.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Contents.json" afterPath="$PROJECT_DIR$/ios/shaker/Images.xcassets/LaunchImage.launchimage/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ios/shaker/Info.plist" afterPath="$PROJECT_DIR$/ios/shaker/Info.plist" />
     </list>
     <ignored path="shaker.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -156,7 +109,7 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22065727">
+            <state vertical-scroll-proportion="-1.1885442">
               <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
               <folding />
             </state>
@@ -238,6 +191,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,13 +210,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shaker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shaker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane />
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -537,24 +504,27 @@
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2535107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496361" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298351" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -568,6 +538,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/.gradle/2.4/taskArtifacts/cache.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -770,7 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/android/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22065727">
+        <state vertical-scroll-proportion="-1.1885442">
           <caret line="91" column="27" selection-start-line="91" selection-start-column="27" selection-end-line="91" selection-end-column="27" />
           <folding />
         </state>

@@ -141,7 +141,7 @@ appStyles = StyleSheet.create({
     paddingHorizontal: 24*Size.UNIT,
     borderWidth: 2*Size.UNIT,
     borderRadius: 8*Size.UNIT,
-    margin: 1*Size.UNIT,
+    margin: 10*Size.UNIT,
   },
   wideRowText:{
     fontSize: 18*Size.UNIT,
@@ -154,7 +154,7 @@ appStyles = StyleSheet.create({
     borderWidth: 1*Size.UNIT,
     borderRadius: 6*Size.UNIT,
     paddingVertical: 9*Size.UNIT,
-    margin: 1*Size.UNIT,
+    margin: 10*Size.UNIT,
     paddingHorizontal: 24*Size.UNIT
   },
   narrowRowText:{
@@ -186,13 +186,13 @@ appStyles = StyleSheet.create({
     padding: 3*Size.UNIT,
   },
   midImage:{
-    height: 100*Size.UNIT,
-    width: 100*Size.UNIT,
+    //height: 100*Size.UNIT,
+    //width: 100*Size.UNIT,
     alignSelf: 'center'
   },
   largeImage:{
-    height: 200*Size.UNIT,
-    width: 200*Size.UNIT
+    //height: 200*Size.UNIT,
+    //width: 200*Size.UNIT
   },
   backButton:{
     fontSize: 29*Size.UNIT,

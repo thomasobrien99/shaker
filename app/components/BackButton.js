@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome'
 import colors from '../styles/colors'
-import {View, AsyncStorage, TouchableOpacity } from 'react-native';
+import {View, AsyncStorage, TouchableOpacity} from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet'
 
 class BackButton extends Component {

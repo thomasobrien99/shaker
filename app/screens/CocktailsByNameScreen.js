@@ -4,7 +4,6 @@ import {
   View,
   ListView,
   TextInput,
-  AsyncStorage,
   RefreshControl
 } from 'react-native';
 

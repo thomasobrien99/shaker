@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Navigator
+  Navigator,
+  BackAndroid
 } from 'react-native';
 
 import CocktailsIndexScreen from '../screens/CocktailsIndexScreen'
@@ -13,6 +13,15 @@ import CocktailCategoryShowScreen from '../screens/CocktailCategoryShowScreen'
 
 
 class CocktailNavigator extends Component {
+  componentDidMount(){
+    BackAndroid.addEventListener('hardwareBackPress', ()=>{
+      if (this.refs.cocktailNavigator.getCurrentRoutes().length > 1){
+        this.refs.cocktailNavigator.pop();
+        return true;
+      }
+      return false;
+    })
+  }
   componentWillReceiveProps(props){
     if (props.newRoute.tab === 'cocktailsTab'){
       let currentRoute = this.refs.cocktailNavigator.getCurrentRoutes().slice().pop()

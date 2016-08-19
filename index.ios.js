@@ -1,22 +1,18 @@
+'use strict'
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View,
   Navigator,
   TabBarIOS,
   Dimensions,
   AsyncStorage,
   Platform
 } from 'react-native';
+import EStylesheet from 'react-native-extended-stylesheet'
 
 import CocktailNavigator from './app/navigation/CocktailNavigator'
 import IngredientNavigator from './app/navigation/IngredientNavigator'
 import MixNavigator from './app/navigation/MixNavigator'
-
-
-import EStylesheet from 'react-native-extended-stylesheet'
 
 let {height, width} = Dimensions.get('window');
 
@@ -25,7 +21,6 @@ EStylesheet.build({
   headerColor: '#00648c', //darkblue
   appFont: Platform.OS === 'ios' ? 'Aleo-Bold' : 'aleo_bold'
 });
-
 
 class shaker extends Component {
   constructor(props) {

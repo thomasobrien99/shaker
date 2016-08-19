@@ -1,11 +1,23 @@
 'use strict'
 import React, { Component } from 'react';
-import {Navigator, StyleSheet} from 'react-native';
+import {
+  Navigator,
+  BackAndroid
+} from 'react-native';
 
 import IngredientsIndexScreen from '../screens/IngredientsIndexScreen'
 import IngredientsShowScreen from '../screens/IngredientsShowScreen'
 
 class IngredientNavigator extends Component {
+  componentDidMount(){
+    BackAndroid.addEventListener('hardwareBackPress', ()=>{
+      if (this.refs.ingredientNavigator.getCurrentRoutes().length > 1){
+        this.refs.ingredientNavigator.pop();
+        return true;
+      }
+      return false;
+    })
+  }
   componentWillReceiveProps(props){
     console.log(this.props)
     if (props.newRoute.tab === 'ingredientsTab'){
@@ -36,14 +48,10 @@ class IngredientNavigator extends Component {
       <Navigator
       initialRoute={{ident: "index"}}
       ref="ingredientNavigator"
-      style={styles.navigatorStyles}
       renderScene={this._renderScene}
       changeSelectedTab={this.props.changeSelectedTab} />
       )
   }
 }
-const styles = StyleSheet.create({
-  
-})
 
 module.exports = IngredientNavigator;

@@ -10,7 +10,6 @@ import {
 import ViewContainer from '../components/ViewContainer'
 import StatusBarBackground from '../components/StatusBarBackground'
 import CocktailRow from '../components/CocktailRow'
-import appStyles from '../styles/styles'
 import colors from '../styles/colors'
 import toTitleCase from '../services/helpers'
 
@@ -41,7 +40,7 @@ class CocktailsByCategoryScreen extends Component {
   }
   _renderCategoryRow(category) {
     return (
-      <TouchableOpacity style={[appStyles.wideRow, {backgroundColor:colors.darkBlue}]} onPress={()=>this._navigateToCategoryShow(category.name)}>
+      <TouchableOpacity style={[styles.wideRow, {backgroundColor:colors.darkBlue}]} onPress={()=>this._navigateToCategoryShow(category.name)}>
         <Text style={[appStyles.wideRowText, {color:'white'}]}>{toTitleCase(category.name)}</Text>
       </TouchableOpacity>
       )
@@ -68,7 +67,21 @@ const styles = EStyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems:'center'
-  }
+  },
+  wideRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingVertical: "12rem",
+    paddingHorizontal: "24rem",
+    borderWidth:"2rem",
+    borderRadius:"8rem",
+    margin:"1rem",
+  },
+  wideRowText:{
+    fontSize: "18rem",
+    fontFamily: "$appFont"
+  },
 })
 
 module.exports = CocktailsByCategoryScreen;

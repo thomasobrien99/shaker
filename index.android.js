@@ -2,23 +2,18 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
-  Text,
-  View,
   AsyncStorage,
   Image,
   Dimensions,
-  Platform
+  Platform,
+  BackAndroid
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator'
-import ScrollableTabView from 'react-native-scrollable-tab-view'
+import EStylesheet from 'react-native-extended-stylesheet'
 
 import CocktailNavigator from './app/navigation/CocktailNavigator'
 import IngredientNavigator from './app/navigation/IngredientNavigator'
 import MixNavigator from './app/navigation/MixNavigator'
-import ViewContainer from './app/components/ViewContainer'
-
-import EStylesheet from 'react-native-extended-stylesheet'
 
 let {height, width} = Dimensions.get('window');
 
@@ -89,8 +84,5 @@ class shaker extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  
-});
 
 AppRegistry.registerComponent('shaker', () => shaker);

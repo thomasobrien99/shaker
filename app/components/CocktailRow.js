@@ -11,7 +11,6 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 
 import colors from '../styles/colors'
 
-
 class CocktailRow extends Component {
   render(){
 		return (

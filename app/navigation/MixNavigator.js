@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
-  Text,
-  View,
-  Navigator,
-  TouchableOpacity,
-  ListView
+  BackAndroid,
+  Navigator
 } from 'react-native';
 
 import MixIndexScreen from '../screens/MixIndexScreen'
@@ -14,6 +10,15 @@ import MixBarScreen from '../screens/MixBarScreen'
 import MixIngredientsScreen from '../screens/MixIngredientsScreen'
 
 class MixNavigator extends Component {
+  componentDidMount(){
+    BackAndroid.addEventListener('hardwareBackPress', ()=>{
+      if (this.refs.mixNavigator.getCurrentRoutes().length > 1){
+        this.refs.mixNavigator.pop();
+        return true;
+      }
+      return false;
+    })
+  }
   _renderScene(route, navigator){
     var globalNavigatorProps = {navigator}
     switch(route.ident){
@@ -31,15 +36,10 @@ class MixNavigator extends Component {
       initialRoute={{ident: "index"}}
       ref="mixNavigator"
       name="mixNavigator"
-      style={styles.navigatorStyles}
       renderScene={this._renderScene}
       changeSelectedTab={this.props.changeSelectedTab} />
       )
   }
 }
-
-const styles = StyleSheet.create({
-  
-});
 
 module.exports = MixNavigator;
